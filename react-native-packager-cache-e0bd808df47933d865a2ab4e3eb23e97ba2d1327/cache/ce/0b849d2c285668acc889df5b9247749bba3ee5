@@ -1,0 +1,142 @@
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var _jsxFileName = "/home/muri/Documents/react-native/NativeBase-KitchenSink/js/components/actionsheet/regular.js";
+
+var _react = require("react");
+
+var _react2 = babelHelpers.interopRequireDefault(_react);
+
+var _nativeBase = require("native-base");
+
+var BUTTONS = ["Option 0", "Option 1", "Option 2", "Delete", "Cancel"];
+var DESTRUCTIVE_INDEX = 3;
+var CANCEL_INDEX = 4;
+
+var ActionSheetNB = function (_Component) {
+  babelHelpers.inherits(ActionSheetNB, _Component);
+
+  function ActionSheetNB(props) {
+    babelHelpers.classCallCheck(this, ActionSheetNB);
+
+    var _this = babelHelpers.possibleConstructorReturn(this, (ActionSheetNB.__proto__ || Object.getPrototypeOf(ActionSheetNB)).call(this, props));
+
+    _this.state = {};
+    return _this;
+  }
+
+  babelHelpers.createClass(ActionSheetNB, [{
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      return _react2.default.createElement(
+        _nativeBase.Container,
+        {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 26
+          }
+        },
+        _react2.default.createElement(
+          _nativeBase.Header,
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 27
+            }
+          },
+          _react2.default.createElement(
+            _nativeBase.Left,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 28
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Button,
+              { transparent: true, onPress: function onPress() {
+                  return _this2.props.navigation.goBack();
+                }, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 29
+                }
+              },
+              _react2.default.createElement(_nativeBase.Icon, { name: "arrow-back", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 30
+                }
+              })
+            )
+          ),
+          _react2.default.createElement(
+            _nativeBase.Body,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 33
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Title,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 34
+                }
+              },
+              "ActionSheet"
+            )
+          ),
+          _react2.default.createElement(_nativeBase.Right, {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 36
+            }
+          })
+        ),
+        _react2.default.createElement(
+          _nativeBase.Content,
+          { padder: true, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 38
+            }
+          },
+          _react2.default.createElement(
+            _nativeBase.Button,
+            {
+              onPress: function onPress() {
+                return _nativeBase.ActionSheet.show({
+                  options: BUTTONS,
+                  cancelButtonIndex: CANCEL_INDEX,
+                  destructiveButtonIndex: DESTRUCTIVE_INDEX,
+                  title: "Options"
+                }, function (buttonIndex) {
+                  _this2.setState({ clicked: BUTTONS[buttonIndex] });
+                });
+              },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 39
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Text,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 53
+                }
+              },
+              "Actionsheet"
+            )
+          )
+        )
+      );
+    }
+  }]);
+  return ActionSheetNB;
+}(_react.Component);
+
+exports.default = ActionSheetNB;

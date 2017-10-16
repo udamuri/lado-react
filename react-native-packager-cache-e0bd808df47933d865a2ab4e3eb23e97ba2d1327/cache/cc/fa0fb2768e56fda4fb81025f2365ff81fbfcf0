@@ -1,0 +1,166 @@
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var _jsxFileName = "/home/muri/Documents/react-native/NativeBase-KitchenSink/js/components/fab/index.js";
+
+var _react = require("react");
+
+var _react2 = babelHelpers.interopRequireDefault(_react);
+
+var _nativeBase = require("native-base");
+
+var _styles = require("./styles");
+
+var _styles2 = babelHelpers.interopRequireDefault(_styles);
+
+var datas = [{
+  route: "BasicFab",
+  text: "Basic FAB"
+}, {
+  route: "MultipleFab",
+  text: "Multiple FABs"
+}];
+
+var NHFab = function (_Component) {
+  babelHelpers.inherits(NHFab, _Component);
+
+  function NHFab() {
+    babelHelpers.classCallCheck(this, NHFab);
+    return babelHelpers.possibleConstructorReturn(this, (NHFab.__proto__ || Object.getPrototypeOf(NHFab)).apply(this, arguments));
+  }
+
+  babelHelpers.createClass(NHFab, [{
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      return _react2.default.createElement(
+        _nativeBase.Container,
+        { style: _styles2.default.container, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 34
+          }
+        },
+        _react2.default.createElement(
+          _nativeBase.Header,
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 36
+            }
+          },
+          _react2.default.createElement(
+            _nativeBase.Left,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 37
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Button,
+              {
+                transparent: true,
+                onPress: function onPress() {
+                  return _this2.props.navigation.navigate("DrawerOpen");
+                },
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 38
+                }
+              },
+              _react2.default.createElement(_nativeBase.Icon, { name: "menu", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 42
+                }
+              })
+            )
+          ),
+          _react2.default.createElement(
+            _nativeBase.Body,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 45
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Title,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 46
+                }
+              },
+              "FAB"
+            )
+          ),
+          _react2.default.createElement(_nativeBase.Right, {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 48
+            }
+          })
+        ),
+        _react2.default.createElement(
+          _nativeBase.Content,
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 51
+            }
+          },
+          _react2.default.createElement(_nativeBase.List, {
+            dataArray: datas,
+            renderRow: function renderRow(data) {
+              return _react2.default.createElement(
+                _nativeBase.ListItem,
+                {
+                  button: true,
+                  onPress: function onPress() {
+                    return _this2.props.navigation.navigate(data.route);
+                  },
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 55
+                  }
+                },
+                _react2.default.createElement(
+                  _nativeBase.Text,
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 59
+                    }
+                  },
+                  data.text
+                ),
+                _react2.default.createElement(
+                  _nativeBase.Right,
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 60
+                    }
+                  },
+                  _react2.default.createElement(_nativeBase.Icon, { name: "arrow-forward", style: { color: "#999" }, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 61
+                    }
+                  })
+                )
+              );
+            },
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 52
+            }
+          })
+        )
+      );
+    }
+  }]);
+  return NHFab;
+}(_react.Component);
+
+exports.default = NHFab;

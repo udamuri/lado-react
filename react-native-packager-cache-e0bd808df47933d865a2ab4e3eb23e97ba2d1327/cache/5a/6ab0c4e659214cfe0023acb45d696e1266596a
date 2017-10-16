@@ -1,0 +1,537 @@
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var _jsxFileName = "/home/muri/Documents/react-native/NativeBase-KitchenSink/js/components/button/iconBtn.js";
+
+var _react = require("react");
+
+var _react2 = babelHelpers.interopRequireDefault(_react);
+
+var _reactNative = require("react-native");
+
+var _nativeBase = require("native-base");
+
+var _styles = require("./styles");
+
+var _styles2 = babelHelpers.interopRequireDefault(_styles);
+
+var IconBtn = function (_Component) {
+  babelHelpers.inherits(IconBtn, _Component);
+
+  function IconBtn() {
+    babelHelpers.classCallCheck(this, IconBtn);
+    return babelHelpers.possibleConstructorReturn(this, (IconBtn.__proto__ || Object.getPrototypeOf(IconBtn)).apply(this, arguments));
+  }
+
+  babelHelpers.createClass(IconBtn, [{
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      return _react2.default.createElement(
+        _nativeBase.Container,
+        { style: _styles2.default.container, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 23
+          }
+        },
+        _react2.default.createElement(
+          _nativeBase.Header,
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 24
+            }
+          },
+          _react2.default.createElement(
+            _nativeBase.Left,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 25
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Button,
+              { transparent: true, onPress: function onPress() {
+                  return _this2.props.navigation.goBack();
+                }, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 26
+                }
+              },
+              _react2.default.createElement(_nativeBase.Icon, { name: "arrow-back", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 27
+                }
+              })
+            )
+          ),
+          _react2.default.createElement(
+            _nativeBase.Body,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 30
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Title,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 31
+                }
+              },
+              "Icon Buttons"
+            )
+          ),
+          _react2.default.createElement(_nativeBase.Right, {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 33
+            }
+          })
+        ),
+        _react2.default.createElement(
+          _nativeBase.Content,
+          { padder: true, style: { padding: 20 }, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 37
+            }
+          },
+          _react2.default.createElement(
+            _reactNative.View,
+            {
+              style: { flexDirection: "row", justifyContent: "space-between" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 38
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Button,
+              { iconLeft: true, light: true, style: _styles2.default.mb15, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 41
+                }
+              },
+              _react2.default.createElement(_nativeBase.Icon, { active: true, name: "arrow-back", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 42
+                }
+              }),
+              _react2.default.createElement(
+                _nativeBase.Text,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 43
+                  }
+                },
+                "Back"
+              )
+            ),
+            _react2.default.createElement(
+              _nativeBase.Button,
+              { light: true, iconRight: true, style: _styles2.default.mb15, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 45
+                }
+              },
+              _react2.default.createElement(
+                _nativeBase.Text,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 46
+                  }
+                },
+                "Next"
+              ),
+              _react2.default.createElement(_nativeBase.Icon, { active: true, name: "arrow-forward", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 47
+                }
+              })
+            ),
+            _react2.default.createElement(
+              _nativeBase.Button,
+              { light: true, style: _styles2.default.mb15, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 49
+                }
+              },
+              _react2.default.createElement(_nativeBase.Icon, { active: true, name: "arrow-down", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 50
+                }
+              })
+            ),
+            _react2.default.createElement(
+              _nativeBase.Button,
+              { light: true, style: _styles2.default.mb15, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 52
+                }
+              },
+              _react2.default.createElement(_nativeBase.Icon, { active: true, name: "arrow-up", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 53
+                }
+              })
+            )
+          ),
+          _react2.default.createElement(
+            _reactNative.View,
+            { style: { flexDirection: "row" }, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 56
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Button,
+              { iconLeft: true, style: _styles2.default.mb15, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 57
+                }
+              },
+              _react2.default.createElement(_nativeBase.Icon, { active: true, name: "home", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 58
+                }
+              }),
+              _react2.default.createElement(
+                _nativeBase.Text,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 59
+                  }
+                },
+                "Home"
+              )
+            ),
+            _react2.default.createElement(
+              _nativeBase.Button,
+              {
+                iconLeft: true,
+                bordered: true,
+                style: { marginBottom: 20, marginLeft: 10 },
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 61
+                }
+              },
+              _react2.default.createElement(_nativeBase.Icon, { active: true, name: "briefcase", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 66
+                }
+              }),
+              _react2.default.createElement(
+                _nativeBase.Text,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 67
+                  }
+                },
+                "Work"
+              )
+            )
+          ),
+          _react2.default.createElement(
+            _reactNative.View,
+            { style: { flexDirection: "row" }, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 70
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Button,
+              { iconLeft: true, success: true, style: _styles2.default.mb15, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 71
+                }
+              },
+              _react2.default.createElement(_nativeBase.Icon, { active: true, name: "people", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 72
+                }
+              }),
+              _react2.default.createElement(
+                _nativeBase.Text,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 73
+                  }
+                },
+                "People"
+              )
+            ),
+            _react2.default.createElement(
+              _nativeBase.Button,
+              {
+                iconLeft: true,
+                success: true,
+                bordered: true,
+                style: { marginBottom: 20, marginLeft: 10 },
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 75
+                }
+              },
+              _react2.default.createElement(_nativeBase.Icon, { active: true, name: "paw", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 81
+                }
+              }),
+              _react2.default.createElement(
+                _nativeBase.Text,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 82
+                  }
+                },
+                "Animals"
+              )
+            )
+          ),
+          _react2.default.createElement(
+            _reactNative.View,
+            { style: { flexDirection: "row" }, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 85
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Button,
+              { iconLeft: true, danger: true, style: _styles2.default.mb15, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 86
+                }
+              },
+              _react2.default.createElement(_nativeBase.Icon, { active: true, name: "close", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 87
+                }
+              }),
+              _react2.default.createElement(
+                _nativeBase.Text,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 88
+                  }
+                },
+                "Trash"
+              )
+            ),
+            _react2.default.createElement(
+              _nativeBase.Button,
+              {
+                danger: true,
+                bordered: true,
+                style: { marginBottom: 20, marginLeft: 10 },
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 90
+                }
+              },
+              _react2.default.createElement(_nativeBase.Icon, { active: true, name: "trash", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 95
+                }
+              })
+            ),
+            _react2.default.createElement(
+              _nativeBase.Button,
+              {
+                danger: true,
+                transparent: true,
+                style: { marginBottom: 20, marginLeft: 10 },
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 97
+                }
+              },
+              _react2.default.createElement(_nativeBase.Icon, { active: true, name: "trash", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 102
+                }
+              })
+            )
+          ),
+          _react2.default.createElement(
+            _reactNative.View,
+            { style: { flexDirection: "row" }, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 105
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Button,
+              { iconLeft: true, warning: true, style: _styles2.default.mb15, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 106
+                }
+              },
+              _react2.default.createElement(_nativeBase.Icon, { active: true, name: "warning", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 107
+                }
+              }),
+              _react2.default.createElement(
+                _nativeBase.Text,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 108
+                  }
+                },
+                "Dont"
+              )
+            ),
+            _react2.default.createElement(
+              _nativeBase.Button,
+              {
+                warning: true,
+                bordered: true,
+                style: { marginBottom: 20, marginLeft: 10 },
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 110
+                }
+              },
+              _react2.default.createElement(_nativeBase.Icon, { active: true, name: "warning", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 115
+                }
+              })
+            )
+          ),
+          _react2.default.createElement(
+            _reactNative.View,
+            { style: { flexDirection: "row" }, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 118
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Button,
+              { iconLeft: true, info: true, style: _styles2.default.mb15, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 119
+                }
+              },
+              _react2.default.createElement(_nativeBase.Icon, { name: "alert", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 120
+                }
+              }),
+              _react2.default.createElement(
+                _nativeBase.Text,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 121
+                  }
+                },
+                "Help"
+              )
+            ),
+            _react2.default.createElement(
+              _nativeBase.Button,
+              { info: true, style: { marginBottom: 20, marginLeft: 10 }, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 123
+                }
+              },
+              _react2.default.createElement(_nativeBase.Icon, { name: "alert", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 124
+                }
+              })
+            )
+          ),
+          _react2.default.createElement(
+            _reactNative.View,
+            { style: { flexDirection: "row" }, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 127
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Button,
+              { iconLeft: true, dark: true, style: _styles2.default.mb15, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 128
+                }
+              },
+              _react2.default.createElement(_nativeBase.Icon, { active: true, name: "cog", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 129
+                }
+              }),
+              _react2.default.createElement(
+                _nativeBase.Text,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 130
+                  }
+                },
+                "Settings"
+              )
+            ),
+            _react2.default.createElement(
+              _nativeBase.Button,
+              {
+                dark: true,
+                transparent: true,
+                style: { marginBottom: 20, marginLeft: 10 },
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 132
+                }
+              },
+              _react2.default.createElement(_nativeBase.Icon, { active: true, name: "cog", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 137
+                }
+              })
+            )
+          ),
+          _react2.default.createElement(
+            _nativeBase.Button,
+            { iconLeft: true, transparent: true, style: _styles2.default.mb15, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 140
+              }
+            },
+            _react2.default.createElement(_nativeBase.Icon, { active: true, name: "beer", __source: {
+                fileName: _jsxFileName,
+                lineNumber: 141
+              }
+            }),
+            _react2.default.createElement(
+              _nativeBase.Text,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 142
+                }
+              },
+              "Pub"
+            )
+          )
+        )
+      );
+    }
+  }]);
+  return IconBtn;
+}(_react.Component);
+
+exports.default = IconBtn;

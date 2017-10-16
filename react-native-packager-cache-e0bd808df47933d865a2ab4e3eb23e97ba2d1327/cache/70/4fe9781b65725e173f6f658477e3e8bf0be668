@@ -1,0 +1,173 @@
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var _jsxFileName = "/home/muri/Documents/react-native/NativeBase-KitchenSink/js/components/thumbnail/index.js";
+
+var _react = require("react");
+
+var _react2 = babelHelpers.interopRequireDefault(_react);
+
+var _nativeBase = require("native-base");
+
+var _styles = require("./styles");
+
+var _styles2 = babelHelpers.interopRequireDefault(_styles);
+
+var imgOne = require("../../../img/swiper-1.png");
+var imgTwo = require("../../../img/swiper-2.png");
+
+var logo = require("../../../img/splashscreen.png");
+var cover = require("../../../img/web-cover1.jpg");
+
+var NHThumbnail = function (_Component) {
+  babelHelpers.inherits(NHThumbnail, _Component);
+
+  function NHThumbnail() {
+    babelHelpers.classCallCheck(this, NHThumbnail);
+    return babelHelpers.possibleConstructorReturn(this, (NHThumbnail.__proto__ || Object.getPrototypeOf(NHThumbnail)).apply(this, arguments));
+  }
+
+  babelHelpers.createClass(NHThumbnail, [{
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      return _react2.default.createElement(
+        _nativeBase.Container,
+        { style: _styles2.default.container, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 31
+          }
+        },
+        _react2.default.createElement(
+          _nativeBase.Header,
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 32
+            }
+          },
+          _react2.default.createElement(
+            _nativeBase.Left,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 33
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Button,
+              {
+                transparent: true,
+                onPress: function onPress() {
+                  return _this2.props.navigation.navigate("DrawerOpen");
+                },
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 34
+                }
+              },
+              _react2.default.createElement(_nativeBase.Icon, { name: "menu", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 38
+                }
+              })
+            )
+          ),
+          _react2.default.createElement(
+            _nativeBase.Body,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 41
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Title,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 42
+                }
+              },
+              "Thumbnail"
+            )
+          ),
+          _react2.default.createElement(_nativeBase.Right, {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 44
+            }
+          })
+        ),
+        _react2.default.createElement(
+          _nativeBase.Content,
+          { padder: true, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 47
+            }
+          },
+          _react2.default.createElement(
+            _nativeBase.View,
+            { style: { flex: 1, alignItems: "center" }, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 48
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Text,
+              { style: _styles2.default.mb10, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 49
+                }
+              },
+              "Square Thumbnail"
+            ),
+            _react2.default.createElement(_nativeBase.Thumbnail, { square: true, small: true, source: logo, style: _styles2.default.mb10, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 50
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Thumbnail, { square: true, source: logo, style: _styles2.default.mb10, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 51
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Thumbnail, { square: true, large: true, source: logo, style: _styles2.default.mb35, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 52
+              }
+            }),
+            _react2.default.createElement(
+              _nativeBase.Text,
+              { style: _styles2.default.mb10, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 54
+                }
+              },
+              "Circular Thumbnail"
+            ),
+            _react2.default.createElement(_nativeBase.Thumbnail, { small: true, source: cover, style: _styles2.default.mb10, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 55
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Thumbnail, { source: cover, style: _styles2.default.mb10, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 56
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Thumbnail, { large: true, source: cover, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 57
+              }
+            })
+          )
+        )
+      );
+    }
+  }]);
+  return NHThumbnail;
+}(_react.Component);
+
+exports.default = NHThumbnail;

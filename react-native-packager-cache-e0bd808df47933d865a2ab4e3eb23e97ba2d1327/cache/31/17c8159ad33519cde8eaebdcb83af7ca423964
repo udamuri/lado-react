@@ -1,0 +1,843 @@
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var _jsxFileName = "/home/muri/Documents/react-native/NativeBase-KitchenSink/js/components/icon/basic.js";
+
+var _react = require("react");
+
+var _react2 = babelHelpers.interopRequireDefault(_react);
+
+var _reactNative = require("react-native");
+
+var _nativeBase = require("native-base");
+
+var _styles = require("./styles");
+
+var _styles2 = babelHelpers.interopRequireDefault(_styles);
+
+var Basic = function (_Component) {
+  babelHelpers.inherits(Basic, _Component);
+
+  function Basic() {
+    babelHelpers.classCallCheck(this, Basic);
+    return babelHelpers.possibleConstructorReturn(this, (Basic.__proto__ || Object.getPrototypeOf(Basic)).apply(this, arguments));
+  }
+
+  babelHelpers.createClass(Basic, [{
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      return _react2.default.createElement(
+        _nativeBase.Container,
+        { style: _styles2.default.container, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 21
+          }
+        },
+        _react2.default.createElement(
+          _nativeBase.Header,
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 22
+            }
+          },
+          _react2.default.createElement(
+            _nativeBase.Left,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 23
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Button,
+              { transparent: true, onPress: function onPress() {
+                  return _this2.replaceAt("icon");
+                }, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 24
+                }
+              },
+              _react2.default.createElement(_nativeBase.Icon, { name: "arrow-back", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 25
+                }
+              })
+            )
+          ),
+          _react2.default.createElement(
+            _nativeBase.Body,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 28
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Title,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 29
+                }
+              },
+              "Basic"
+            )
+          ),
+          _react2.default.createElement(_nativeBase.Right, {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 31
+            }
+          })
+        ),
+        _react2.default.createElement(
+          _nativeBase.Content,
+          { padder: true, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 34
+            }
+          },
+          _react2.default.createElement(
+            _reactNative.View,
+            { style: _styles2.default.iconContainer, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 35
+              }
+            },
+            _react2.default.createElement(_nativeBase.Icon, {
+              name: "logo-apple",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 36
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              active: true,
+              name: "pizza",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 40
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              name: "person",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 45
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              active: true,
+              name: "beer",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 49
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              active: true,
+              name: "bicycle",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 54
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              name: "navigate",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 59
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              active: true,
+              name: "cloud-circle",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 63
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              name: "pie",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 68
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              name: "bookmarks",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 72
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              active: true,
+              name: "pulse",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 76
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              name: "camera",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 81
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              active: true,
+              name: "mic-off",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 85
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              active: true,
+              name: "film",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 90
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              active: true,
+              name: "flame",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 95
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              name: "paper",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 100
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              active: true,
+              name: "paper-plane",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 104
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              name: "speedometer",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 109
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              name: "cart",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 113
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              name: "flask",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 117
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              active: true,
+              name: "cloudy-night",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 121
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              active: true,
+              name: "partly-sunny",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 126
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              name: "paw",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 131
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              active: true,
+              name: "rose",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 135
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              name: "pint",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 140
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              active: true,
+              name: "shuffle",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 144
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              active: true,
+              name: "game-controller-a",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 149
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              name: "glasses",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 154
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              active: true,
+              name: "microphone",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 158
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              active: true,
+              name: "keypad",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 163
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              name: "color-filter",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 168
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              name: "eye",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 172
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              active: true,
+              name: "mic-off",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 176
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              name: "alarm",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 181
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              active: true,
+              name: "medkit",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 185
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              name: "ionic",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 190
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              active: true,
+              name: "star-half",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 194
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              active: true,
+              name: "refresh",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 199
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              active: true,
+              name: "train",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 204
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              active: true,
+              name: "musical-notes",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 209
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              active: true,
+              name: "wine",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 214
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              active: true,
+              name: "nutrition",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 219
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              name: "thunderstorm",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 224
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              name: "grid",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 228
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              active: true,
+              name: "settings",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 232
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              active: true,
+              name: "chatbubbles",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 237
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              active: true,
+              name: "chatboxes",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 242
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              name: "cog",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 247
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              name: "baseball",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 251
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              name: "bulb",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 255
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              active: true,
+              name: "calculator",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 259
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              active: true,
+              name: "rainy",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 264
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              name: "videocam",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 269
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              name: "play",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 273
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              name: "disc",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 277
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              active: true,
+              name: "body",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 281
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              active: true,
+              name: "lock",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 286
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              name: "skip-backward",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 291
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              active: true,
+              name: "key",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 295
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              name: "flag",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 300
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              active: true,
+              name: "skip-forward",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 304
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              name: "barcode",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 309
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              name: "logo-tux",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 313
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              name: "copy",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 317
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              active: true,
+              name: "stopwatch",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 321
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              name: "medical",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 326
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              active: true,
+              name: "archive",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 330
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              active: true,
+              name: "bookmark",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 335
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              active: true,
+              name: "clipboard",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 340
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              active: true,
+              name: "happy",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 345
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              active: true,
+              name: "share",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 350
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              active: true,
+              name: "bluetooth",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 355
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              active: true,
+              name: "search",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 360
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              active: true,
+              name: "wifi",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 365
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              name: "hand",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 370
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              active: true,
+              name: "trash",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 374
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              active: true,
+              name: "images",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 379
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              active: true,
+              name: "attach",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 384
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              name: "logo-facebook",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 389
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              name: "logo-googleplus",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 393
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              name: "logo-twitter",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 397
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              name: "logo-github",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 401
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              name: "logo-whatsapp",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 405
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              name: "logo-wordpress",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 409
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              name: "logo-youtube",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 413
+              }
+            }),
+            _react2.default.createElement(_nativeBase.Icon, {
+              name: "mail",
+              style: { width: 45, height: 45, justifyContent: "center" },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 417
+              }
+            })
+          )
+        )
+      );
+    }
+  }]);
+  return Basic;
+}(_react.Component);
+
+exports.default = Basic;

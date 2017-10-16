@@ -1,0 +1,132 @@
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var _jsxFileName = "/home/muri/Documents/react-native/NativeBase-KitchenSink/js/components/layout/nested.js";
+
+var _react = require("react");
+
+var _react2 = babelHelpers.interopRequireDefault(_react);
+
+var _nativeBase = require("native-base");
+
+var _reactNativeEasyGrid = require("react-native-easy-grid");
+
+var NestedGrid = function (_Component) {
+  babelHelpers.inherits(NestedGrid, _Component);
+
+  function NestedGrid() {
+    babelHelpers.classCallCheck(this, NestedGrid);
+    return babelHelpers.possibleConstructorReturn(this, (NestedGrid.__proto__ || Object.getPrototypeOf(NestedGrid)).apply(this, arguments));
+  }
+
+  babelHelpers.createClass(NestedGrid, [{
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      return _react2.default.createElement(
+        _nativeBase.Container,
+        {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 20
+          }
+        },
+        _react2.default.createElement(
+          _nativeBase.Header,
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 21
+            }
+          },
+          _react2.default.createElement(
+            _nativeBase.Left,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 22
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Button,
+              { transparent: true, onPress: function onPress() {
+                  return _this2.props.navigation.goBack();
+                }, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 23
+                }
+              },
+              _react2.default.createElement(_nativeBase.Icon, { name: "arrow-back", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 24
+                }
+              })
+            )
+          ),
+          _react2.default.createElement(
+            _nativeBase.Body,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 27
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Title,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 28
+                }
+              },
+              "Nested Grid"
+            )
+          ),
+          _react2.default.createElement(_nativeBase.Right, {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 30
+            }
+          })
+        ),
+        _react2.default.createElement(
+          _reactNativeEasyGrid.Grid,
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 33
+            }
+          },
+          _react2.default.createElement(_reactNativeEasyGrid.Col, { style: { backgroundColor: "#DD9E2C" }, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 34
+            }
+          }),
+          _react2.default.createElement(
+            _reactNativeEasyGrid.Col,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 35
+              }
+            },
+            _react2.default.createElement(_reactNativeEasyGrid.Row, { style: { backgroundColor: "#00CE9F" }, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 36
+              }
+            }),
+            _react2.default.createElement(_reactNativeEasyGrid.Row, { style: { backgroundColor: "#635DB7" }, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 37
+              }
+            })
+          )
+        )
+      );
+    }
+  }]);
+  return NestedGrid;
+}(_react.Component);
+
+exports.default = NestedGrid;

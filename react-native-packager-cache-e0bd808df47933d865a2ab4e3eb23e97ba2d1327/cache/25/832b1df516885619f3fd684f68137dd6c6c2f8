@@ -1,0 +1,175 @@
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+var _jsxFileName = '/home/muri/Documents/react-native/NativeBase-KitchenSink/js/components/list/index.js';
+
+var _react = require('react');
+
+var _react2 = babelHelpers.interopRequireDefault(_react);
+
+var _nativeBase = require('native-base');
+
+var _styles = require('./styles');
+
+var _styles2 = babelHelpers.interopRequireDefault(_styles);
+
+var datas = [{
+	route: 'NHBasicList',
+	text: 'Basic List'
+}, {
+	route: 'NHListDivider',
+	text: 'List Divider'
+}, {
+	route: 'NHListHeader',
+	text: 'List Header'
+}, {
+	route: 'NHListIcon',
+	text: 'List Icon'
+}, {
+	route: 'NHListAvatar',
+	text: 'List Avatar'
+}, {
+	route: 'NHListThumbnail',
+	text: 'List Thumbnail'
+},, {
+	route: 'NHListSeparator',
+	text: 'List Separator'
+}];
+
+var NHList = function (_Component) {
+	babelHelpers.inherits(NHList, _Component);
+
+	function NHList() {
+		babelHelpers.classCallCheck(this, NHList);
+		return babelHelpers.possibleConstructorReturn(this, (NHList.__proto__ || Object.getPrototypeOf(NHList)).apply(this, arguments));
+	}
+
+	babelHelpers.createClass(NHList, [{
+		key: 'render',
+		value: function render() {
+			var _this2 = this;
+
+			return _react2.default.createElement(
+				_nativeBase.Container,
+				{ style: _styles2.default.container, __source: {
+						fileName: _jsxFileName,
+						lineNumber: 42
+					}
+				},
+				_react2.default.createElement(
+					_nativeBase.Header,
+					{
+						__source: {
+							fileName: _jsxFileName,
+							lineNumber: 43
+						}
+					},
+					_react2.default.createElement(
+						_nativeBase.Left,
+						{
+							__source: {
+								fileName: _jsxFileName,
+								lineNumber: 44
+							}
+						},
+						_react2.default.createElement(
+							_nativeBase.Button,
+							{ transparent: true, onPress: function onPress() {
+									return _this2.props.navigation.navigate('DrawerOpen');
+								}, __source: {
+									fileName: _jsxFileName,
+									lineNumber: 45
+								}
+							},
+							_react2.default.createElement(_nativeBase.Icon, { name: 'menu', __source: {
+									fileName: _jsxFileName,
+									lineNumber: 46
+								}
+							})
+						)
+					),
+					_react2.default.createElement(
+						_nativeBase.Body,
+						{
+							__source: {
+								fileName: _jsxFileName,
+								lineNumber: 49
+							}
+						},
+						_react2.default.createElement(
+							_nativeBase.Title,
+							{
+								__source: {
+									fileName: _jsxFileName,
+									lineNumber: 50
+								}
+							},
+							'List'
+						)
+					),
+					_react2.default.createElement(_nativeBase.Right, {
+						__source: {
+							fileName: _jsxFileName,
+							lineNumber: 52
+						}
+					})
+				),
+				_react2.default.createElement(
+					_nativeBase.Content,
+					{
+						__source: {
+							fileName: _jsxFileName,
+							lineNumber: 55
+						}
+					},
+					_react2.default.createElement(_nativeBase.List, {
+						dataArray: datas,
+						renderRow: function renderRow(data) {
+							return _react2.default.createElement(
+								_nativeBase.ListItem,
+								{ button: true, onPress: function onPress() {
+										return _this2.props.navigation.navigate(data.route);
+									}, __source: {
+										fileName: _jsxFileName,
+										lineNumber: 59
+									}
+								},
+								_react2.default.createElement(
+									_nativeBase.Text,
+									{
+										__source: {
+											fileName: _jsxFileName,
+											lineNumber: 60
+										}
+									},
+									data.text
+								),
+								_react2.default.createElement(
+									_nativeBase.Right,
+									{
+										__source: {
+											fileName: _jsxFileName,
+											lineNumber: 63
+										}
+									},
+									_react2.default.createElement(_nativeBase.Icon, { name: 'arrow-forward', __source: {
+											fileName: _jsxFileName,
+											lineNumber: 64
+										}
+									})
+								)
+							);
+						},
+						__source: {
+							fileName: _jsxFileName,
+							lineNumber: 56
+						}
+					})
+				)
+			);
+		}
+	}]);
+	return NHList;
+}(_react.Component);
+
+exports.default = NHList;

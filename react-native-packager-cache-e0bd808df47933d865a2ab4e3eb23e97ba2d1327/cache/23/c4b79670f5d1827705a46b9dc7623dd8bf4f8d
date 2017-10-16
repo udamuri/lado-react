@@ -1,0 +1,319 @@
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var _jsxFileName = "/home/muri/Documents/react-native/NativeBase-KitchenSink/js/components/footer/badgeFooter.js";
+
+var _react = require("react");
+
+var _react2 = babelHelpers.interopRequireDefault(_react);
+
+var _nativeBase = require("native-base");
+
+var _styles = require("./styles");
+
+var _styles2 = babelHelpers.interopRequireDefault(_styles);
+
+var BadgeFooter = function (_Component) {
+  babelHelpers.inherits(BadgeFooter, _Component);
+
+  function BadgeFooter(props) {
+    babelHelpers.classCallCheck(this, BadgeFooter);
+
+    var _this = babelHelpers.possibleConstructorReturn(this, (BadgeFooter.__proto__ || Object.getPrototypeOf(BadgeFooter)).call(this, props));
+
+    _this.state = {
+      tab1: false,
+      tab2: false,
+      tab3: true,
+      tab4: false
+    };
+    return _this;
+  }
+
+  babelHelpers.createClass(BadgeFooter, [{
+    key: "toggleTab1",
+    value: function toggleTab1() {
+      this.setState({
+        tab1: true,
+        tab2: false,
+        tab3: false,
+        tab4: false
+      });
+    }
+  }, {
+    key: "toggleTab2",
+    value: function toggleTab2() {
+      this.setState({
+        tab1: false,
+        tab2: true,
+        tab3: false,
+        tab4: false
+      });
+    }
+  }, {
+    key: "toggleTab3",
+    value: function toggleTab3() {
+      this.setState({
+        tab1: false,
+        tab2: false,
+        tab3: true,
+        tab4: false
+      });
+    }
+  }, {
+    key: "toggleTab4",
+    value: function toggleTab4() {
+      this.setState({
+        tab1: false,
+        tab2: false,
+        tab3: false,
+        tab4: true
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      return _react2.default.createElement(
+        _nativeBase.Container,
+        { style: _styles2.default.container, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 70
+          }
+        },
+        _react2.default.createElement(
+          _nativeBase.Header,
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 71
+            }
+          },
+          _react2.default.createElement(
+            _nativeBase.Left,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 72
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Button,
+              { transparent: true, onPress: function onPress() {
+                  return _this2.props.navigation.goBack();
+                }, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 73
+                }
+              },
+              _react2.default.createElement(_nativeBase.Icon, { name: "arrow-back", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 74
+                }
+              })
+            )
+          ),
+          _react2.default.createElement(
+            _nativeBase.Body,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 77
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Title,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 78
+                }
+              },
+              "Footer"
+            )
+          ),
+          _react2.default.createElement(_nativeBase.Right, {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 80
+            }
+          })
+        ),
+        _react2.default.createElement(_nativeBase.Content, { padder: true, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 83
+          }
+        }),
+        _react2.default.createElement(
+          _nativeBase.Footer,
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 85
+            }
+          },
+          _react2.default.createElement(
+            _nativeBase.FooterTab,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 86
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Button,
+              {
+                active: this.state.tab1,
+                onPress: function onPress() {
+                  return _this2.toggleTab1();
+                },
+                vertical: true,
+                badge: true,
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 87
+                }
+              },
+              _react2.default.createElement(
+                _nativeBase.Badge,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 93
+                  }
+                },
+                _react2.default.createElement(
+                  _nativeBase.Text,
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 93
+                    }
+                  },
+                  "2"
+                )
+              ),
+              _react2.default.createElement(_nativeBase.Icon, { active: this.state.tab1, name: "apps", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 94
+                }
+              }),
+              _react2.default.createElement(
+                _nativeBase.Text,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 95
+                  }
+                },
+                "Apps"
+              )
+            ),
+            _react2.default.createElement(
+              _nativeBase.Button,
+              { active: this.state.tab2, onPress: function onPress() {
+                  return _this2.toggleTab2();
+                }, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 97
+                }
+              },
+              _react2.default.createElement(_nativeBase.Icon, { active: this.state.tab2, name: "camera", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 98
+                }
+              }),
+              _react2.default.createElement(
+                _nativeBase.Text,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 99
+                  }
+                },
+                "Camera"
+              )
+            ),
+            _react2.default.createElement(
+              _nativeBase.Button,
+              {
+                active: this.state.tab3,
+                onPress: function onPress() {
+                  return _this2.toggleTab3();
+                },
+                vertical: true,
+                badge: true,
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 101
+                }
+              },
+              _react2.default.createElement(
+                _nativeBase.Badge,
+                { style: { backgroundColor: "green" }, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 107
+                  }
+                },
+                _react2.default.createElement(
+                  _nativeBase.Text,
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 108
+                    }
+                  },
+                  "51"
+                )
+              ),
+              _react2.default.createElement(_nativeBase.Icon, { active: this.state.tab3, name: "compass", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 110
+                }
+              }),
+              _react2.default.createElement(
+                _nativeBase.Text,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 111
+                  }
+                },
+                "Compass"
+              )
+            ),
+            _react2.default.createElement(
+              _nativeBase.Button,
+              { active: this.state.tab4, onPress: function onPress() {
+                  return _this2.toggleTab4();
+                }, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 113
+                }
+              },
+              _react2.default.createElement(_nativeBase.Icon, { active: this.state.tab4, name: "contact", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 114
+                }
+              }),
+              _react2.default.createElement(
+                _nativeBase.Text,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 115
+                  }
+                },
+                "Contact"
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
+  return BadgeFooter;
+}(_react.Component);
+
+exports.default = BadgeFooter;

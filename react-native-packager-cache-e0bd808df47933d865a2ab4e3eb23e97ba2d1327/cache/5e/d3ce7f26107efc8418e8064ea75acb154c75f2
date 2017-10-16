@@ -1,0 +1,186 @@
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var _jsxFileName = "/home/muri/Documents/react-native/NativeBase-KitchenSink/js/Drawer.js";
+
+var _react = require("react");
+
+var _react2 = babelHelpers.interopRequireDefault(_react);
+
+var _reactNavigation = require("react-navigation");
+
+var _home = require("./components/home/");
+
+var _home2 = babelHelpers.interopRequireDefault(_home);
+
+var _Header = require("./components/Header/");
+
+var _Header2 = babelHelpers.interopRequireDefault(_Header);
+
+var _anatomy = require("./components/anatomy/");
+
+var _anatomy2 = babelHelpers.interopRequireDefault(_anatomy);
+
+var _footer = require("./components/footer/");
+
+var _footer2 = babelHelpers.interopRequireDefault(_footer);
+
+var _badge = require("./components/badge/");
+
+var _badge2 = babelHelpers.interopRequireDefault(_badge);
+
+var _button = require("./components/button/");
+
+var _button2 = babelHelpers.interopRequireDefault(_button);
+
+var _card = require("./components/card/");
+
+var _card2 = babelHelpers.interopRequireDefault(_card);
+
+var _checkbox = require("./components/checkbox/");
+
+var _checkbox2 = babelHelpers.interopRequireDefault(_checkbox);
+
+var _deckswiper = require("./components/deckswiper/");
+
+var _deckswiper2 = babelHelpers.interopRequireDefault(_deckswiper);
+
+var _fab = require("./components/fab/");
+
+var _fab2 = babelHelpers.interopRequireDefault(_fab);
+
+var _form = require("./components/form/");
+
+var _form2 = babelHelpers.interopRequireDefault(_form);
+
+var _textArea = require("./components/form/textArea");
+
+var _textArea2 = babelHelpers.interopRequireDefault(_textArea);
+
+var _icon = require("./components/icon/");
+
+var _icon2 = babelHelpers.interopRequireDefault(_icon);
+
+var _listSwipe = require("./components/listSwipe/");
+
+var _listSwipe2 = babelHelpers.interopRequireDefault(_listSwipe);
+
+var _basic = require("./components/icon/basic");
+
+var _basic2 = babelHelpers.interopRequireDefault(_basic);
+
+var _state = require("./components/icon/state");
+
+var _state2 = babelHelpers.interopRequireDefault(_state);
+
+var _specific = require("./components/icon/specific");
+
+var _specific2 = babelHelpers.interopRequireDefault(_specific);
+
+var _inputgroup = require("./components/inputgroup/");
+
+var _inputgroup2 = babelHelpers.interopRequireDefault(_inputgroup);
+
+var _layout = require("./components/layout/");
+
+var _layout2 = babelHelpers.interopRequireDefault(_layout);
+
+var _list = require("./components/list/");
+
+var _list2 = babelHelpers.interopRequireDefault(_list);
+
+var _radio = require("./components/radio/");
+
+var _radio2 = babelHelpers.interopRequireDefault(_radio);
+
+var _searchbar = require("./components/searchbar/");
+
+var _searchbar2 = babelHelpers.interopRequireDefault(_searchbar);
+
+var _spinner = require("./components/spinner/");
+
+var _spinner2 = babelHelpers.interopRequireDefault(_spinner);
+
+var _picker = require("./components/picker/");
+
+var _picker2 = babelHelpers.interopRequireDefault(_picker);
+
+var _tab = require("./components/tab/");
+
+var _tab2 = babelHelpers.interopRequireDefault(_tab);
+
+var _thumbnail = require("./components/thumbnail/");
+
+var _thumbnail2 = babelHelpers.interopRequireDefault(_thumbnail);
+
+var _typography = require("./components/typography/");
+
+var _typography2 = babelHelpers.interopRequireDefault(_typography);
+
+var _splashscreen = require("./components/splashscreen/");
+
+var _splashscreen2 = babelHelpers.interopRequireDefault(_splashscreen);
+
+var _sidebar = require("./components/sidebar");
+
+var _sidebar2 = babelHelpers.interopRequireDefault(_sidebar);
+
+var _segment = require("./components/segment");
+
+var _segment2 = babelHelpers.interopRequireDefault(_segment);
+
+var _toast = require("./components/toast");
+
+var _toast2 = babelHelpers.interopRequireDefault(_toast);
+
+var _actionsheet = require("./components/actionsheet");
+
+var _actionsheet2 = babelHelpers.interopRequireDefault(_actionsheet);
+
+var DrawerExample = (0, _reactNavigation.DrawerNavigator)({
+  Home: { screen: _home2.default },
+  Anatomy: { screen: _anatomy2.default },
+  Header: { screen: _Header2.default },
+  Footer: { screen: _footer2.default },
+  NHBadge: { screen: _badge2.default },
+  NHButton: { screen: _button2.default },
+  NHCard: { screen: _card2.default },
+  NHCheckbox: { screen: _checkbox2.default },
+  NHDeckSwiper: { screen: _deckswiper2.default },
+  NHFab: { screen: _fab2.default },
+  NHForm: { screen: _form2.default },
+  TextArea: { screen: _textArea2.default },
+  NHIcon: { screen: _icon2.default },
+  BasicIcon: { screen: _basic2.default },
+  IconState: { screen: _state2.default },
+  SpecificIcon: { screen: _specific2.default },
+  NHInputGroup: { screen: _inputgroup2.default },
+  NHLayout: { screen: _layout2.default },
+  NHList: { screen: _list2.default },
+  ListSwipe: { screen: _listSwipe2.default },
+  NHRadio: { screen: _radio2.default },
+  NHSearchbar: { screen: _searchbar2.default },
+  NHSpinner: { screen: _spinner2.default },
+  NHPicker: { screen: _picker2.default },
+  NHTab: { screen: _tab2.default },
+  NHThumbnail: { screen: _thumbnail2.default },
+  NHTypography: { screen: _typography2.default },
+  Segment: { screen: _segment2.default },
+  Toast: { screen: _toast2.default },
+  Actionsheet: { screen: _actionsheet2.default }
+}, {
+  initialRouteName: "Home",
+  contentOptions: {
+    activeTintColor: "#e91e63"
+  },
+  contentComponent: function contentComponent(props) {
+    return _react2.default.createElement(_sidebar2.default, babelHelpers.extends({}, props, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 77
+      }
+    }));
+  }
+});
+
+exports.default = DrawerExample;

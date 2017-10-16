@@ -1,0 +1,366 @@
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var _jsxFileName = "/home/muri/Documents/react-native/NativeBase-KitchenSink/js/components/card/card-list.js";
+
+var _react = require("react");
+
+var _react2 = babelHelpers.interopRequireDefault(_react);
+
+var _nativeBase = require("native-base");
+
+var _styles = require("./styles");
+
+var _styles2 = babelHelpers.interopRequireDefault(_styles);
+
+var NHCardList = function (_Component) {
+  babelHelpers.inherits(NHCardList, _Component);
+
+  function NHCardList() {
+    babelHelpers.classCallCheck(this, NHCardList);
+    return babelHelpers.possibleConstructorReturn(this, (NHCardList.__proto__ || Object.getPrototypeOf(NHCardList)).apply(this, arguments));
+  }
+
+  babelHelpers.createClass(NHCardList, [{
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      return _react2.default.createElement(
+        _nativeBase.Container,
+        { style: _styles2.default.container, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 24
+          }
+        },
+        _react2.default.createElement(
+          _nativeBase.Header,
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 25
+            }
+          },
+          _react2.default.createElement(
+            _nativeBase.Left,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 26
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Button,
+              { transparent: true, onPress: function onPress() {
+                  return _this2.props.navigation.goBack();
+                }, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 27
+                }
+              },
+              _react2.default.createElement(_nativeBase.Icon, { name: "arrow-back", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 28
+                }
+              })
+            )
+          ),
+          _react2.default.createElement(
+            _nativeBase.Body,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 31
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Title,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 32
+                }
+              },
+              "Card List"
+            )
+          ),
+          _react2.default.createElement(_nativeBase.Right, {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 34
+            }
+          })
+        ),
+        _react2.default.createElement(
+          _nativeBase.Content,
+          { padder: true, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 37
+            }
+          },
+          _react2.default.createElement(
+            _nativeBase.Card,
+            { style: _styles2.default.mb, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 38
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.CardItem,
+              { header: true, bordered: true, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 39
+                }
+              },
+              _react2.default.createElement(
+                _nativeBase.Text,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 40
+                  }
+                },
+                "Social Applications"
+              )
+            ),
+            _react2.default.createElement(
+              _nativeBase.CardItem,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 44
+                }
+              },
+              _react2.default.createElement(_nativeBase.Icon, {
+                active: true,
+                name: "logo-googleplus",
+                style: { color: "#DD5044" },
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 45
+                }
+              }),
+              _react2.default.createElement(
+                _nativeBase.Text,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 50
+                  }
+                },
+                "Google Plus"
+              ),
+              _react2.default.createElement(
+                _nativeBase.Right,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 51
+                  }
+                },
+                _react2.default.createElement(_nativeBase.Icon, { name: "arrow-forward", __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 52
+                  }
+                })
+              )
+            ),
+            _react2.default.createElement(
+              _nativeBase.CardItem,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 55
+                }
+              },
+              _react2.default.createElement(_nativeBase.Icon, { active: true, name: "logo-facebook", style: { color: "#3B579D" }, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 56
+                }
+              }),
+              _react2.default.createElement(
+                _nativeBase.Text,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 57
+                  }
+                },
+                "facebook"
+              ),
+              _react2.default.createElement(
+                _nativeBase.Right,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 58
+                  }
+                },
+                _react2.default.createElement(_nativeBase.Icon, { name: "arrow-forward", __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 59
+                  }
+                })
+              )
+            ),
+            _react2.default.createElement(
+              _nativeBase.CardItem,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 62
+                }
+              },
+              _react2.default.createElement(_nativeBase.Icon, { active: true, name: "logo-twitter", style: { color: "#55ACEE" }, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 63
+                }
+              }),
+              _react2.default.createElement(
+                _nativeBase.Text,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 64
+                  }
+                },
+                "Twitter"
+              ),
+              _react2.default.createElement(
+                _nativeBase.Right,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 65
+                  }
+                },
+                _react2.default.createElement(_nativeBase.Icon, { name: "arrow-forward", __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 66
+                  }
+                })
+              )
+            ),
+            _react2.default.createElement(
+              _nativeBase.CardItem,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 69
+                }
+              },
+              _react2.default.createElement(_nativeBase.Icon, { active: true, name: "logo-reddit", style: { color: "#FF4500" }, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 70
+                }
+              }),
+              _react2.default.createElement(
+                _nativeBase.Text,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 71
+                  }
+                },
+                "Reddit"
+              ),
+              _react2.default.createElement(
+                _nativeBase.Right,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 72
+                  }
+                },
+                _react2.default.createElement(_nativeBase.Icon, { name: "arrow-forward", __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 73
+                  }
+                })
+              )
+            ),
+            _react2.default.createElement(
+              _nativeBase.CardItem,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 76
+                }
+              },
+              _react2.default.createElement(_nativeBase.Icon, { active: true, name: "logo-linkedin", style: { color: "#007BB6" }, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 77
+                }
+              }),
+              _react2.default.createElement(
+                _nativeBase.Text,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 78
+                  }
+                },
+                "LinkedIn"
+              ),
+              _react2.default.createElement(
+                _nativeBase.Right,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 79
+                  }
+                },
+                _react2.default.createElement(_nativeBase.Icon, { name: "arrow-forward", __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 80
+                  }
+                })
+              )
+            ),
+            _react2.default.createElement(
+              _nativeBase.CardItem,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 83
+                }
+              },
+              _react2.default.createElement(_nativeBase.Icon, { active: true, name: "logo-youtube", style: { color: "#D62727" }, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 84
+                }
+              }),
+              _react2.default.createElement(
+                _nativeBase.Text,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 85
+                  }
+                },
+                "YouTube"
+              ),
+              _react2.default.createElement(
+                _nativeBase.Right,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 86
+                  }
+                },
+                _react2.default.createElement(_nativeBase.Icon, { name: "arrow-forward", __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 87
+                  }
+                })
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
+  return NHCardList;
+}(_react.Component);
+
+exports.default = NHCardList;

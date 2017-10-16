@@ -1,0 +1,255 @@
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var _jsxFileName = "/home/muri/Documents/react-native/NativeBase-KitchenSink/js/components/card/card-showcase.js";
+
+var _react = require("react");
+
+var _react2 = babelHelpers.interopRequireDefault(_react);
+
+var _reactNative = require("react-native");
+
+var _nativeBase = require("native-base");
+
+var _styles = require("./styles");
+
+var _styles2 = babelHelpers.interopRequireDefault(_styles);
+
+var deviceWidth = _reactNative.Dimensions.get("window").width;
+
+var logo = require("../../../img/logo.png");
+var cardImage = require("../../../img/drawer-cover.png");
+
+var NHCardShowcase = function (_Component) {
+  babelHelpers.inherits(NHCardShowcase, _Component);
+
+  function NHCardShowcase() {
+    babelHelpers.classCallCheck(this, NHCardShowcase);
+    return babelHelpers.possibleConstructorReturn(this, (NHCardShowcase.__proto__ || Object.getPrototypeOf(NHCardShowcase)).apply(this, arguments));
+  }
+
+  babelHelpers.createClass(NHCardShowcase, [{
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      return _react2.default.createElement(
+        _nativeBase.Container,
+        { style: _styles2.default.container, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 31
+          }
+        },
+        _react2.default.createElement(
+          _nativeBase.Header,
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 32
+            }
+          },
+          _react2.default.createElement(
+            _nativeBase.Left,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 33
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Button,
+              { transparent: true, onPress: function onPress() {
+                  return _this2.props.navigation.goBack();
+                }, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 34
+                }
+              },
+              _react2.default.createElement(_nativeBase.Icon, { name: "arrow-back", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 35
+                }
+              })
+            )
+          ),
+          _react2.default.createElement(
+            _nativeBase.Body,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 38
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Title,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 39
+                }
+              },
+              "Card Showcase"
+            )
+          ),
+          _react2.default.createElement(_nativeBase.Right, {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 41
+            }
+          })
+        ),
+        _react2.default.createElement(
+          _nativeBase.Content,
+          { padder: true, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 44
+            }
+          },
+          _react2.default.createElement(
+            _nativeBase.Card,
+            { style: _styles2.default.mb, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 45
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.CardItem,
+              { bordered: true, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 46
+                }
+              },
+              _react2.default.createElement(
+                _nativeBase.Left,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 47
+                  }
+                },
+                _react2.default.createElement(_nativeBase.Thumbnail, { source: logo, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 48
+                  }
+                }),
+                _react2.default.createElement(
+                  _nativeBase.Body,
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 49
+                    }
+                  },
+                  _react2.default.createElement(
+                    _nativeBase.Text,
+                    {
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 50
+                      }
+                    },
+                    "NativeBase"
+                  ),
+                  _react2.default.createElement(
+                    _nativeBase.Text,
+                    { note: true, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 51
+                      }
+                    },
+                    "April 15, 2016"
+                  )
+                )
+              )
+            ),
+            _react2.default.createElement(
+              _nativeBase.CardItem,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 56
+                }
+              },
+              _react2.default.createElement(
+                _nativeBase.Body,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 57
+                  }
+                },
+                _react2.default.createElement(_reactNative.Image, {
+                  style: {
+                    alignSelf: "center",
+                    height: 150,
+                    resizeMode: "cover",
+                    width: deviceWidth / 1.18,
+                    marginVertical: 5
+                  },
+                  source: cardImage,
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 58
+                  }
+                }),
+                _react2.default.createElement(
+                  _nativeBase.Text,
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 68
+                    }
+                  },
+                  "NativeBase is a free and source framework that enable developers to build high-quality mobile apps using React Native with a fusion of ES6. NativeBase builds a layer on top of React Native that provides you with basic set of components for mobile application development."
+                )
+              )
+            ),
+            _react2.default.createElement(
+              _nativeBase.CardItem,
+              { style: { paddingVertical: 0 }, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 77
+                }
+              },
+              _react2.default.createElement(
+                _nativeBase.Left,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 78
+                  }
+                },
+                _react2.default.createElement(
+                  _nativeBase.Button,
+                  { transparent: true, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 79
+                    }
+                  },
+                  _react2.default.createElement(_nativeBase.Icon, { name: "logo-github", __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 80
+                    }
+                  }),
+                  _react2.default.createElement(
+                    _nativeBase.Text,
+                    {
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 81
+                      }
+                    },
+                    "4,923 stars"
+                  )
+                )
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
+  return NHCardShowcase;
+}(_react.Component);
+
+exports.default = NHCardShowcase;

@@ -1,0 +1,328 @@
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+var _jsxFileName = "/home/muri/Documents/react-native/NativeBase-KitchenSink/js/components/deckswiper/advanced.js";
+
+var _react = require("react");
+
+var _react2 = babelHelpers.interopRequireDefault(_react);
+
+var _reactNative = require("react-native");
+
+var _nativeBase = require("native-base");
+
+var _styles = require("./styles");
+
+var _styles2 = babelHelpers.interopRequireDefault(_styles);
+
+var cardOne = require("../../../img/swiper-1.png");
+var cardTwo = require("../../../img/swiper-2.png");
+var cardThree = require("../../../img/swiper-3.png");
+var cardFour = require("../../../img/swiper-4.png");
+
+var cards = [{
+	text: "Card One",
+	name: "One",
+	image: cardOne
+}, {
+	text: "Card Two",
+	name: "Two",
+	image: cardTwo
+}, {
+	text: "Card Three",
+	name: "Three",
+	image: cardThree
+}, {
+	text: "Card Four",
+	name: "Four",
+	image: cardFour
+}];
+
+var AdvancedDeck = function (_Component) {
+	babelHelpers.inherits(AdvancedDeck, _Component);
+
+	function AdvancedDeck() {
+		babelHelpers.classCallCheck(this, AdvancedDeck);
+		return babelHelpers.possibleConstructorReturn(this, (AdvancedDeck.__proto__ || Object.getPrototypeOf(AdvancedDeck)).apply(this, arguments));
+	}
+
+	babelHelpers.createClass(AdvancedDeck, [{
+		key: "render",
+		value: function render() {
+			var _this2 = this;
+
+			return _react2.default.createElement(
+				_nativeBase.Container,
+				{ style: _styles2.default.container, __source: {
+						fileName: _jsxFileName,
+						lineNumber: 57
+					}
+				},
+				_react2.default.createElement(
+					_nativeBase.Header,
+					{
+						__source: {
+							fileName: _jsxFileName,
+							lineNumber: 58
+						}
+					},
+					_react2.default.createElement(
+						_nativeBase.Left,
+						{
+							__source: {
+								fileName: _jsxFileName,
+								lineNumber: 59
+							}
+						},
+						_react2.default.createElement(
+							_nativeBase.Button,
+							{ transparent: true, onPress: function onPress() {
+									return _this2.props.navigation.goBack();
+								}, __source: {
+									fileName: _jsxFileName,
+									lineNumber: 60
+								}
+							},
+							_react2.default.createElement(_nativeBase.Icon, { name: "arrow-back", __source: {
+									fileName: _jsxFileName,
+									lineNumber: 61
+								}
+							})
+						)
+					),
+					_react2.default.createElement(
+						_nativeBase.Body,
+						{
+							__source: {
+								fileName: _jsxFileName,
+								lineNumber: 64
+							}
+						},
+						_react2.default.createElement(
+							_nativeBase.Title,
+							{
+								__source: {
+									fileName: _jsxFileName,
+									lineNumber: 65
+								}
+							},
+							"Advanced Deck Swiper"
+						)
+					),
+					_react2.default.createElement(_nativeBase.Right, {
+						__source: {
+							fileName: _jsxFileName,
+							lineNumber: 67
+						}
+					})
+				),
+				_react2.default.createElement(
+					_reactNative.View,
+					{ style: { flex: 1, padding: 12 }, __source: {
+							fileName: _jsxFileName,
+							lineNumber: 70
+						}
+					},
+					_react2.default.createElement(_nativeBase.DeckSwiper, {
+						ref: function ref(mr) {
+							return _this2._deckSwiper = mr;
+						},
+						dataSource: cards,
+						looping: false,
+						renderEmpty: function renderEmpty() {
+							return _react2.default.createElement(
+								_reactNative.View,
+								{ style: { alignSelf: 'center' }, __source: {
+										fileName: _jsxFileName,
+										lineNumber: 76
+									}
+								},
+								_react2.default.createElement(
+									_nativeBase.Text,
+									{
+										__source: {
+											fileName: _jsxFileName,
+											lineNumber: 77
+										}
+									},
+									"Over"
+								)
+							);
+						},
+						renderItem: function renderItem(item) {
+							return _react2.default.createElement(
+								_nativeBase.Card,
+								{ style: { elevation: 3 }, __source: {
+										fileName: _jsxFileName,
+										lineNumber: 80
+									}
+								},
+								_react2.default.createElement(
+									_nativeBase.CardItem,
+									{
+										__source: {
+											fileName: _jsxFileName,
+											lineNumber: 81
+										}
+									},
+									_react2.default.createElement(
+										_nativeBase.Left,
+										{
+											__source: {
+												fileName: _jsxFileName,
+												lineNumber: 82
+											}
+										},
+										_react2.default.createElement(_nativeBase.Thumbnail, { source: item.image, __source: {
+												fileName: _jsxFileName,
+												lineNumber: 83
+											}
+										}),
+										_react2.default.createElement(
+											_nativeBase.Body,
+											{
+												__source: {
+													fileName: _jsxFileName,
+													lineNumber: 84
+												}
+											},
+											_react2.default.createElement(
+												_nativeBase.Text,
+												{
+													__source: {
+														fileName: _jsxFileName,
+														lineNumber: 85
+													}
+												},
+												item.text
+											),
+											_react2.default.createElement(
+												_nativeBase.Text,
+												{ note: true, __source: {
+														fileName: _jsxFileName,
+														lineNumber: 88
+													}
+												},
+												"NativeBase"
+											)
+										)
+									)
+								),
+								_react2.default.createElement(
+									_nativeBase.CardItem,
+									{ cardBody: true, __source: {
+											fileName: _jsxFileName,
+											lineNumber: 92
+										}
+									},
+									_react2.default.createElement(_reactNative.Image, {
+										style: {
+											resizeMode: "cover",
+											width: null,
+											flex: 1,
+											height: 300
+										},
+										source: item.image,
+										__source: {
+											fileName: _jsxFileName,
+											lineNumber: 93
+										}
+									})
+								),
+								_react2.default.createElement(
+									_nativeBase.CardItem,
+									{
+										__source: {
+											fileName: _jsxFileName,
+											lineNumber: 103
+										}
+									},
+									_react2.default.createElement(_nativeBase.IconNB, { name: "ios-heart", style: { color: "#ED4A6A" }, __source: {
+											fileName: _jsxFileName,
+											lineNumber: 104
+										}
+									}),
+									_react2.default.createElement(
+										_nativeBase.Text,
+										{
+											__source: {
+												fileName: _jsxFileName,
+												lineNumber: 105
+											}
+										},
+										item.name
+									)
+								)
+							);
+						},
+						__source: {
+							fileName: _jsxFileName,
+							lineNumber: 71
+						}
+					})
+				),
+				_react2.default.createElement(
+					_reactNative.View,
+					{ style: { flexDirection: "row", flex: 1, position: "absolute", bottom: 50, left: 0, right: 0, justifyContent: 'space-between', padding: 15 }, __source: {
+							fileName: _jsxFileName,
+							lineNumber: 112
+						}
+					},
+					_react2.default.createElement(
+						_nativeBase.Button,
+						{ iconLeft: true, onPress: function onPress() {
+								return _this2._deckSwiper._root.swipeLeft();
+							}, __source: {
+								fileName: _jsxFileName,
+								lineNumber: 113
+							}
+						},
+						_react2.default.createElement(_nativeBase.Icon, { name: "arrow-back", __source: {
+								fileName: _jsxFileName,
+								lineNumber: 114
+							}
+						}),
+						_react2.default.createElement(
+							_nativeBase.Text,
+							{
+								__source: {
+									fileName: _jsxFileName,
+									lineNumber: 115
+								}
+							},
+							"Swipe Left"
+						)
+					),
+					_react2.default.createElement(
+						_nativeBase.Button,
+						{ iconRight: true, onPress: function onPress() {
+								return _this2._deckSwiper._root.swipeRight();
+							}, __source: {
+								fileName: _jsxFileName,
+								lineNumber: 117
+							}
+						},
+						_react2.default.createElement(
+							_nativeBase.Text,
+							{
+								__source: {
+									fileName: _jsxFileName,
+									lineNumber: 118
+								}
+							},
+							"Swipe Right"
+						),
+						_react2.default.createElement(_nativeBase.Icon, { name: "arrow-forward", __source: {
+								fileName: _jsxFileName,
+								lineNumber: 119
+							}
+						})
+					)
+				)
+			);
+		}
+	}]);
+	return AdvancedDeck;
+}(_react.Component);
+
+exports.default = AdvancedDeck;

@@ -1,0 +1,905 @@
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var _jsxFileName = "/home/muri/Documents/react-native/NativeBase-KitchenSink/js/components/list/list-icon.js";
+
+var _react = require("react");
+
+var _react2 = babelHelpers.interopRequireDefault(_react);
+
+var _reactNative = require("react-native");
+
+var _nativeBase = require("native-base");
+
+var _styles = require("./styles");
+
+var _styles2 = babelHelpers.interopRequireDefault(_styles);
+
+var Item = _nativeBase.Picker.Item;
+
+var NHListIcon = function (_Component) {
+  babelHelpers.inherits(NHListIcon, _Component);
+
+  function NHListIcon(props) {
+    babelHelpers.classCallCheck(this, NHListIcon);
+
+    var _this = babelHelpers.possibleConstructorReturn(this, (NHListIcon.__proto__ || Object.getPrototypeOf(NHListIcon)).call(this, props));
+
+    _this.state = {
+      selectedItem: undefined,
+      selected1: "key1",
+      results: {
+        items: []
+      }
+    };
+    return _this;
+  }
+
+  babelHelpers.createClass(NHListIcon, [{
+    key: "onValueChange",
+    value: function onValueChange(value) {
+      this.setState({
+        selected1: value
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      return _react2.default.createElement(
+        _nativeBase.Container,
+        { style: _styles2.default.container, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 47
+          }
+        },
+        _react2.default.createElement(
+          _nativeBase.Header,
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 48
+            }
+          },
+          _react2.default.createElement(
+            _nativeBase.Left,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 49
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Button,
+              { transparent: true, onPress: function onPress() {
+                  return _this2.props.navigation.goBack();
+                }, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 50
+                }
+              },
+              _react2.default.createElement(_nativeBase.Icon, { name: "arrow-back", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 51
+                }
+              })
+            )
+          ),
+          _react2.default.createElement(
+            _nativeBase.Body,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 54
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Title,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 55
+                }
+              },
+              "List Icon"
+            )
+          ),
+          _react2.default.createElement(_nativeBase.Right, {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 57
+            }
+          })
+        ),
+        _react2.default.createElement(
+          _nativeBase.Content,
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 60
+            }
+          },
+          _react2.default.createElement(_nativeBase.Separator, { bordered: true, noTopBorder: true, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 61
+            }
+          }),
+          _react2.default.createElement(
+            _nativeBase.ListItem,
+            { icon: true, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 62
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Left,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 63
+                }
+              },
+              _react2.default.createElement(
+                _nativeBase.Button,
+                { style: { backgroundColor: "#FF9501" }, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 64
+                  }
+                },
+                _react2.default.createElement(_nativeBase.Icon, { active: true, name: "plane", __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 65
+                  }
+                })
+              )
+            ),
+            _react2.default.createElement(
+              _nativeBase.Body,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 68
+                }
+              },
+              _react2.default.createElement(
+                _nativeBase.Text,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 69
+                  }
+                },
+                "Airplane Mode"
+              )
+            ),
+            _react2.default.createElement(
+              _nativeBase.Right,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 71
+                }
+              },
+              _react2.default.createElement(_nativeBase.Switch, { value: false, onTintColor: "#50B948", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 72
+                }
+              })
+            )
+          ),
+          _react2.default.createElement(
+            _nativeBase.ListItem,
+            { icon: true, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 75
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Left,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 76
+                }
+              },
+              _react2.default.createElement(
+                _nativeBase.Button,
+                { style: { backgroundColor: "#007AFF" }, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 77
+                  }
+                },
+                _react2.default.createElement(_nativeBase.Icon, { active: true, name: "wifi", __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 78
+                  }
+                })
+              )
+            ),
+            _react2.default.createElement(
+              _nativeBase.Body,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 81
+                }
+              },
+              _react2.default.createElement(
+                _nativeBase.Text,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 82
+                  }
+                },
+                "Wi-Fi"
+              )
+            ),
+            _react2.default.createElement(
+              _nativeBase.Right,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 84
+                }
+              },
+              _react2.default.createElement(
+                _nativeBase.Text,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 85
+                  }
+                },
+                "GeekyAnts"
+              ),
+              _reactNative.Platform.OS === "ios" && _react2.default.createElement(_nativeBase.Icon, { active: true, name: "arrow-forward", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 86
+                }
+              })
+            )
+          ),
+          _react2.default.createElement(
+            _nativeBase.ListItem,
+            { icon: true, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 89
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Left,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 90
+                }
+              },
+              _react2.default.createElement(
+                _nativeBase.Button,
+                { style: { backgroundColor: "#007AFF" }, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 91
+                  }
+                },
+                _react2.default.createElement(_nativeBase.Icon, { active: true, name: "bluetooth", __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 92
+                  }
+                })
+              )
+            ),
+            _react2.default.createElement(
+              _nativeBase.Body,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 95
+                }
+              },
+              _react2.default.createElement(
+                _nativeBase.Text,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 96
+                  }
+                },
+                "Bluetooth"
+              )
+            ),
+            _react2.default.createElement(
+              _nativeBase.Right,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 98
+                }
+              },
+              _react2.default.createElement(
+                _nativeBase.Text,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 99
+                  }
+                },
+                "On"
+              ),
+              _reactNative.Platform.OS === "ios" && _react2.default.createElement(_nativeBase.Icon, { active: true, name: "arrow-forward", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 100
+                }
+              })
+            )
+          ),
+          _react2.default.createElement(
+            _nativeBase.ListItem,
+            { icon: true, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 103
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Left,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 104
+                }
+              },
+              _react2.default.createElement(
+                _nativeBase.Button,
+                { style: { backgroundColor: "#4CDA64" }, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 105
+                  }
+                },
+                _react2.default.createElement(_nativeBase.Icon, { active: true, name: "phone-portrait", __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 106
+                  }
+                })
+              )
+            ),
+            _react2.default.createElement(
+              _nativeBase.Body,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 109
+                }
+              },
+              _react2.default.createElement(
+                _nativeBase.Text,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 110
+                  }
+                },
+                "Mobile Data"
+              )
+            ),
+            _react2.default.createElement(
+              _nativeBase.Right,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 112
+                }
+              },
+              _react2.default.createElement(_nativeBase.Radio, { selected: true, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 113
+                }
+              })
+            )
+          ),
+          _react2.default.createElement(
+            _nativeBase.ListItem,
+            { icon: true, last: true, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 116
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Left,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 117
+                }
+              },
+              _react2.default.createElement(
+                _nativeBase.Button,
+                { style: { backgroundColor: "#4CDA64" }, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 118
+                  }
+                },
+                _react2.default.createElement(_nativeBase.Icon, { active: true, name: "link", __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 119
+                  }
+                })
+              )
+            ),
+            _react2.default.createElement(
+              _nativeBase.Body,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 122
+                }
+              },
+              _react2.default.createElement(
+                _nativeBase.Text,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 123
+                  }
+                },
+                "Personal Hotspot"
+              )
+            ),
+            _react2.default.createElement(
+              _nativeBase.Right,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 125
+                }
+              },
+              _react2.default.createElement(
+                _nativeBase.Text,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 126
+                  }
+                },
+                "Off"
+              ),
+              _reactNative.Platform.OS === "ios" && _react2.default.createElement(_nativeBase.Icon, { active: true, name: "arrow-forward", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 127
+                }
+              })
+            )
+          ),
+          _react2.default.createElement(_nativeBase.Separator, { bordered: true, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 131
+            }
+          }),
+          _react2.default.createElement(
+            _nativeBase.ListItem,
+            { icon: true, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 133
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Left,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 134
+                }
+              },
+              _react2.default.createElement(
+                _nativeBase.Button,
+                { style: { backgroundColor: "#FD3C2D" }, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 135
+                  }
+                },
+                _react2.default.createElement(_nativeBase.Icon, { active: true, name: "notifications", __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 136
+                  }
+                })
+              )
+            ),
+            _react2.default.createElement(
+              _nativeBase.Body,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 139
+                }
+              },
+              _react2.default.createElement(
+                _nativeBase.Text,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 140
+                  }
+                },
+                "Notifications"
+              )
+            ),
+            _react2.default.createElement(
+              _nativeBase.Right,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 142
+                }
+              },
+              _reactNative.Platform.OS === "ios" && _react2.default.createElement(_nativeBase.Icon, { active: true, name: "arrow-forward", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 143
+                }
+              })
+            )
+          ),
+          _react2.default.createElement(
+            _nativeBase.ListItem,
+            { icon: true, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 146
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Left,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 147
+                }
+              },
+              _react2.default.createElement(
+                _nativeBase.Button,
+                { style: { backgroundColor: "#8F8E93" }, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 148
+                  }
+                },
+                _react2.default.createElement(_nativeBase.Icon, { active: true, name: "switch", __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 149
+                  }
+                })
+              )
+            ),
+            _react2.default.createElement(
+              _nativeBase.Body,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 152
+                }
+              },
+              _react2.default.createElement(
+                _nativeBase.Text,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 153
+                  }
+                },
+                "Control Center"
+              )
+            ),
+            _react2.default.createElement(
+              _nativeBase.Right,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 155
+                }
+              },
+              _reactNative.Platform.OS === "ios" && _react2.default.createElement(_nativeBase.Icon, { active: true, name: "arrow-forward", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 156
+                }
+              })
+            )
+          ),
+          _react2.default.createElement(
+            _nativeBase.ListItem,
+            { icon: true, last: true, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 159
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Left,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 160
+                }
+              },
+              _react2.default.createElement(
+                _nativeBase.Button,
+                { style: { backgroundColor: "#5855D6" }, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 161
+                  }
+                },
+                _react2.default.createElement(_nativeBase.Icon, { active: true, name: "moon", __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 162
+                  }
+                })
+              )
+            ),
+            _react2.default.createElement(
+              _nativeBase.Body,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 165
+                }
+              },
+              _react2.default.createElement(
+                _nativeBase.Text,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 166
+                  }
+                },
+                "Do Not Disturb"
+              )
+            ),
+            _react2.default.createElement(
+              _nativeBase.Right,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 168
+                }
+              },
+              _react2.default.createElement(
+                _nativeBase.Text,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 169
+                  }
+                },
+                "Yes"
+              )
+            )
+          ),
+          _react2.default.createElement(_nativeBase.Separator, { bordered: true, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 172
+            }
+          }),
+          _react2.default.createElement(
+            _nativeBase.ListItem,
+            { icon: true, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 173
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Left,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 174
+                }
+              },
+              _react2.default.createElement(
+                _nativeBase.Button,
+                { style: { backgroundColor: "#4CDA64" }, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 175
+                  }
+                },
+                _react2.default.createElement(_nativeBase.Icon, { name: "arrow-dropdown", __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 176
+                  }
+                })
+              )
+            ),
+            _react2.default.createElement(
+              _nativeBase.Body,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 179
+                }
+              },
+              _react2.default.createElement(
+                _nativeBase.Text,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 180
+                  }
+                },
+                "Pick SIM"
+              )
+            ),
+            _react2.default.createElement(
+              _nativeBase.Right,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 182
+                }
+              },
+              _react2.default.createElement(
+                _nativeBase.Picker,
+                {
+                  note: true,
+                  iosHeader: "Select one",
+                  mode: "dropdown",
+                  selectedValue: this.state.selected1,
+                  onValueChange: this.onValueChange.bind(this),
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 183
+                  }
+                },
+                _react2.default.createElement(Item, { label: "TATA", value: "key0", __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 190
+                  }
+                }),
+                _react2.default.createElement(Item, { label: "AIRTEL", value: "key1", __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 191
+                  }
+                })
+              )
+            )
+          ),
+          _react2.default.createElement(
+            _nativeBase.ListItem,
+            { icon: true, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 195
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Left,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 196
+                }
+              },
+              _react2.default.createElement(
+                _nativeBase.Button,
+                { style: { backgroundColor: "#8F8E93" }, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 197
+                  }
+                },
+                _react2.default.createElement(_nativeBase.Icon, { active: true, name: "cog", __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 198
+                  }
+                })
+              )
+            ),
+            _react2.default.createElement(
+              _nativeBase.Body,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 201
+                }
+              },
+              _react2.default.createElement(
+                _nativeBase.Text,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 202
+                  }
+                },
+                "Software Update"
+              )
+            ),
+            _react2.default.createElement(
+              _nativeBase.Right,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 204
+                }
+              },
+              _react2.default.createElement(
+                _nativeBase.Badge,
+                { style: { backgroundColor: "#FD3C2D" }, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 205
+                  }
+                },
+                _react2.default.createElement(
+                  _nativeBase.Text,
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 206
+                    }
+                  },
+                  "2"
+                )
+              )
+            )
+          ),
+          _react2.default.createElement(
+            _nativeBase.ListItem,
+            { last: true, icon: true, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 210
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Left,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 211
+                }
+              },
+              _react2.default.createElement(
+                _nativeBase.Button,
+                { style: { backgroundColor: "#007AFF" }, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 212
+                  }
+                },
+                _react2.default.createElement(_nativeBase.Icon, { active: true, name: "hand", __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 213
+                  }
+                })
+              )
+            ),
+            _react2.default.createElement(
+              _nativeBase.Body,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 216
+                }
+              },
+              _react2.default.createElement(
+                _nativeBase.Text,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 217
+                  }
+                },
+                "Privacy"
+              )
+            ),
+            _react2.default.createElement(
+              _nativeBase.Right,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 219
+                }
+              },
+              _reactNative.Platform.OS === "ios" && _react2.default.createElement(_nativeBase.Icon, { active: true, name: "arrow-forward", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 220
+                }
+              })
+            )
+          )
+        )
+      );
+    }
+  }]);
+  return NHListIcon;
+}(_react.Component);
+
+exports.default = NHListIcon;

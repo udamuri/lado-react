@@ -1,0 +1,120 @@
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var _jsxFileName = "/home/muri/Documents/react-native/NativeBase-KitchenSink/js/components/Header/8.js";
+
+var _react = require("react");
+
+var _react2 = babelHelpers.interopRequireDefault(_react);
+
+var _nativeBase = require("native-base");
+
+var _styles = require("./styles");
+
+var _styles2 = babelHelpers.interopRequireDefault(_styles);
+
+var Header8 = function (_Component) {
+  babelHelpers.inherits(Header8, _Component);
+
+  function Header8() {
+    babelHelpers.classCallCheck(this, Header8);
+    return babelHelpers.possibleConstructorReturn(this, (Header8.__proto__ || Object.getPrototypeOf(Header8)).apply(this, arguments));
+  }
+
+  babelHelpers.createClass(Header8, [{
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      return _react2.default.createElement(
+        _nativeBase.Container,
+        { style: _styles2.default.container, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 24
+          }
+        },
+        _react2.default.createElement(
+          _nativeBase.Header,
+          {
+            style: { backgroundColor: "#dc4239" },
+            androidStatusBarColor: "#dc2015",
+            iosBarStyle: "light-content",
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 25
+            }
+          },
+          _react2.default.createElement(
+            _nativeBase.Left,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 30
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Button,
+              { transparent: true, onPress: function onPress() {
+                  return _this2.props.navigation.goBack();
+                }, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 31
+                }
+              },
+              _react2.default.createElement(_nativeBase.Icon, { name: "arrow-back", style: { color: "#FFF" }, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 32
+                }
+              })
+            )
+          ),
+          _react2.default.createElement(
+            _nativeBase.Body,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 35
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Title,
+              { style: { color: "#FFF" }, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 36
+                }
+              },
+              "Custom Header"
+            )
+          ),
+          _react2.default.createElement(_nativeBase.Right, {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 38
+            }
+          })
+        ),
+        _react2.default.createElement(
+          _nativeBase.Content,
+          { padder: true, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 42
+            }
+          },
+          _react2.default.createElement(
+            _nativeBase.Text,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 43
+              }
+            },
+            "Header with Custom background color"
+          )
+        )
+      );
+    }
+  }]);
+  return Header8;
+}(_react.Component);
+
+exports.default = Header8;

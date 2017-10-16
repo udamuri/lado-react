@@ -1,0 +1,148 @@
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var _jsxFileName = "/home/muri/Documents/react-native/NativeBase-KitchenSink/js/components/typography/index.js";
+
+var _react = require("react");
+
+var _react2 = babelHelpers.interopRequireDefault(_react);
+
+var _nativeBase = require("native-base");
+
+var _styles = require("./styles");
+
+var _styles2 = babelHelpers.interopRequireDefault(_styles);
+
+var NHTypography = function (_Component) {
+  babelHelpers.inherits(NHTypography, _Component);
+
+  function NHTypography() {
+    babelHelpers.classCallCheck(this, NHTypography);
+    return babelHelpers.possibleConstructorReturn(this, (NHTypography.__proto__ || Object.getPrototypeOf(NHTypography)).apply(this, arguments));
+  }
+
+  babelHelpers.createClass(NHTypography, [{
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      return _react2.default.createElement(
+        _nativeBase.Container,
+        { style: _styles2.default.container, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 26
+          }
+        },
+        _react2.default.createElement(
+          _nativeBase.Header,
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 27
+            }
+          },
+          _react2.default.createElement(
+            _nativeBase.Left,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 28
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Button,
+              {
+                transparent: true,
+                onPress: function onPress() {
+                  return _this2.props.navigation.navigate("DrawerOpen");
+                },
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 29
+                }
+              },
+              _react2.default.createElement(_nativeBase.Icon, { name: "menu", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 33
+                }
+              })
+            )
+          ),
+          _react2.default.createElement(
+            _nativeBase.Body,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 36
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Title,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 37
+                }
+              },
+              "Typography"
+            )
+          ),
+          _react2.default.createElement(_nativeBase.Right, {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 39
+            }
+          })
+        ),
+        _react2.default.createElement(
+          _nativeBase.Content,
+          { padder: true, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 43
+            }
+          },
+          _react2.default.createElement(
+            _nativeBase.H1,
+            { style: _styles2.default.mb10, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 44
+              }
+            },
+            "Header One"
+          ),
+          _react2.default.createElement(
+            _nativeBase.H2,
+            { style: _styles2.default.mb10, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 45
+              }
+            },
+            "Header Two"
+          ),
+          _react2.default.createElement(
+            _nativeBase.H3,
+            { style: _styles2.default.mb10, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 46
+              }
+            },
+            "Header Three"
+          ),
+          _react2.default.createElement(
+            _nativeBase.Text,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 47
+              }
+            },
+            "Default"
+          )
+        )
+      );
+    }
+  }]);
+  return NHTypography;
+}(_react.Component);
+
+exports.default = NHTypography;

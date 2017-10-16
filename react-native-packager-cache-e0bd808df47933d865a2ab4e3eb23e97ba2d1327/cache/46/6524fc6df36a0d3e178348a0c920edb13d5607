@@ -1,0 +1,121 @@
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var _jsxFileName = "/home/muri/Documents/react-native/NativeBase-KitchenSink/js/components/anatomy/index.js";
+
+var _react = require("react");
+
+var _react2 = babelHelpers.interopRequireDefault(_react);
+
+var _nativeBase = require("native-base");
+
+var _styles = require("./styles");
+
+var _styles2 = babelHelpers.interopRequireDefault(_styles);
+
+var Anatomy = function (_Component) {
+  babelHelpers.inherits(Anatomy, _Component);
+
+  function Anatomy() {
+    babelHelpers.classCallCheck(this, Anatomy);
+    return babelHelpers.possibleConstructorReturn(this, (Anatomy.__proto__ || Object.getPrototypeOf(Anatomy)).apply(this, arguments));
+  }
+
+  babelHelpers.createClass(Anatomy, [{
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      return _react2.default.createElement(
+        _nativeBase.Container,
+        { style: _styles2.default.container, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 21
+          }
+        },
+        _react2.default.createElement(
+          _nativeBase.Header,
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 22
+            }
+          },
+          _react2.default.createElement(
+            _nativeBase.Left,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 23
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Button,
+              {
+                transparent: true,
+                onPress: function onPress() {
+                  return _this2.props.navigation.navigate("DrawerOpen");
+                },
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 24
+                }
+              },
+              _react2.default.createElement(_nativeBase.Icon, { name: "ios-menu", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 28
+                }
+              })
+            )
+          ),
+          _react2.default.createElement(
+            _nativeBase.Body,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 31
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Title,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 32
+                }
+              },
+              "Header"
+            )
+          ),
+          _react2.default.createElement(_nativeBase.Right, {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 34
+            }
+          })
+        ),
+        _react2.default.createElement(
+          _nativeBase.Content,
+          { padder: true, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 38
+            }
+          },
+          _react2.default.createElement(
+            _nativeBase.Text,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 39
+              }
+            },
+            "Content goes here"
+          )
+        )
+      );
+    }
+  }]);
+  return Anatomy;
+}(_react.Component);
+
+exports.default = Anatomy;

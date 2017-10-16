@@ -1,0 +1,413 @@
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+var _jsxFileName = "/home/muri/Documents/react-native/NativeBase-KitchenSink/js/App.js";
+
+var _react = require("react");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactNative = require("react-native");
+
+var _nativeBase = require("native-base");
+
+var _reactNavigation = require("react-navigation");
+
+var _Drawer = require("./Drawer");
+
+var _Drawer2 = _interopRequireDefault(_Drawer);
+
+var _Header = require("./components/Header/");
+
+var _Header2 = _interopRequireDefault(_Header);
+
+var _ = require("./components/Header/1");
+
+var _2 = _interopRequireDefault(_);
+
+var _3 = require("./components/Header/2");
+
+var _4 = _interopRequireDefault(_3);
+
+var _5 = require("./components/Header/3");
+
+var _6 = _interopRequireDefault(_5);
+
+var _7 = require("./components/Header/4");
+
+var _8 = _interopRequireDefault(_7);
+
+var _9 = require("./components/Header/5");
+
+var _10 = _interopRequireDefault(_9);
+
+var _11 = require("./components/Header/6");
+
+var _12 = _interopRequireDefault(_11);
+
+var _13 = require("./components/Header/7");
+
+var _14 = _interopRequireDefault(_13);
+
+var _15 = require("./components/Header/8");
+
+var _16 = _interopRequireDefault(_15);
+
+var _basicFooter = require("./components/footer/basicFooter");
+
+var _basicFooter2 = _interopRequireDefault(_basicFooter);
+
+var _iconFooter = require("./components/footer/iconFooter");
+
+var _iconFooter2 = _interopRequireDefault(_iconFooter);
+
+var _iconText = require("./components/footer/iconText");
+
+var _iconText2 = _interopRequireDefault(_iconText);
+
+var _badgeFooter = require("./components/footer/badgeFooter");
+
+var _badgeFooter2 = _interopRequireDefault(_badgeFooter);
+
+var _default = require("./components/button/default");
+
+var _default2 = _interopRequireDefault(_default);
+
+var _outline = require("./components/button/outline");
+
+var _outline2 = _interopRequireDefault(_outline);
+
+var _rounded = require("./components/button/rounded");
+
+var _rounded2 = _interopRequireDefault(_rounded);
+
+var _block = require("./components/button/block");
+
+var _block2 = _interopRequireDefault(_block);
+
+var _full = require("./components/button/full");
+
+var _full2 = _interopRequireDefault(_full);
+
+var _custom = require("./components/button/custom");
+
+var _custom2 = _interopRequireDefault(_custom);
+
+var _transparent = require("./components/button/transparent");
+
+var _transparent2 = _interopRequireDefault(_transparent);
+
+var _iconBtn = require("./components/button/iconBtn");
+
+var _iconBtn2 = _interopRequireDefault(_iconBtn);
+
+var _disabled = require("./components/button/disabled");
+
+var _disabled2 = _interopRequireDefault(_disabled);
+
+var _basic = require("./components/card/basic");
+
+var _basic2 = _interopRequireDefault(_basic);
+
+var _cardImage = require("./components/card/card-image");
+
+var _cardImage2 = _interopRequireDefault(_cardImage);
+
+var _cardShowcase = require("./components/card/card-showcase");
+
+var _cardShowcase2 = _interopRequireDefault(_cardShowcase);
+
+var _cardList = require("./components/card/card-list");
+
+var _cardList2 = _interopRequireDefault(_cardList);
+
+var _cardHeaderAndFooter = require("./components/card/card-header-and-footer");
+
+var _cardHeaderAndFooter2 = _interopRequireDefault(_cardHeaderAndFooter);
+
+var _basic3 = require("./components/fab/basic");
+
+var _basic4 = _interopRequireDefault(_basic3);
+
+var _multiple = require("./components/fab/multiple");
+
+var _multiple2 = _interopRequireDefault(_multiple);
+
+var _fixedLabel = require("./components/form/fixedLabel");
+
+var _fixedLabel2 = _interopRequireDefault(_fixedLabel);
+
+var _inlineLabel = require("./components/form/inlineLabel");
+
+var _inlineLabel2 = _interopRequireDefault(_inlineLabel);
+
+var _floatingLabel = require("./components/form/floatingLabel");
+
+var _floatingLabel2 = _interopRequireDefault(_floatingLabel);
+
+var _placeholder = require("./components/form/placeholder");
+
+var _placeholder2 = _interopRequireDefault(_placeholder);
+
+var _stacked = require("./components/form/stacked");
+
+var _stacked2 = _interopRequireDefault(_stacked);
+
+var _regular = require("./components/inputgroup/regular");
+
+var _regular2 = _interopRequireDefault(_regular);
+
+var _underline = require("./components/inputgroup/underline");
+
+var _underline2 = _interopRequireDefault(_underline);
+
+var _rounded3 = require("./components/inputgroup/rounded");
+
+var _rounded4 = _interopRequireDefault(_rounded3);
+
+var _iconInput = require("./components/inputgroup/iconInput");
+
+var _iconInput2 = _interopRequireDefault(_iconInput);
+
+var _success = require("./components/inputgroup/success");
+
+var _success2 = _interopRequireDefault(_success);
+
+var _error = require("./components/inputgroup/error");
+
+var _error2 = _interopRequireDefault(_error);
+
+var _disabledInput = require("./components/inputgroup/disabledInput");
+
+var _disabledInput2 = _interopRequireDefault(_disabledInput);
+
+var _row = require("./components/layout/row");
+
+var _row2 = _interopRequireDefault(_row);
+
+var _column = require("./components/layout/column");
+
+var _column2 = _interopRequireDefault(_column);
+
+var _nested = require("./components/layout/nested");
+
+var _nested2 = _interopRequireDefault(_nested);
+
+var _customRow = require("./components/layout/customRow");
+
+var _customRow2 = _interopRequireDefault(_customRow);
+
+var _customCol = require("./components/layout/customCol");
+
+var _customCol2 = _interopRequireDefault(_customCol);
+
+var _basicListSwipe = require("./components/listSwipe/basic-list-swipe");
+
+var _basicListSwipe2 = _interopRequireDefault(_basicListSwipe);
+
+var _multiListSwipe = require("./components/listSwipe/multi-list-swipe");
+
+var _multiListSwipe2 = _interopRequireDefault(_multiListSwipe);
+
+var _basicList = require("./components/list/basic-list");
+
+var _basicList2 = _interopRequireDefault(_basicList);
+
+var _listDivider = require("./components/list/list-divider");
+
+var _listDivider2 = _interopRequireDefault(_listDivider);
+
+var _listSeparator = require("./components/list/list-separator");
+
+var _listSeparator2 = _interopRequireDefault(_listSeparator);
+
+var _listHeaders = require("./components/list/list-headers");
+
+var _listHeaders2 = _interopRequireDefault(_listHeaders);
+
+var _listIcon = require("./components/list/list-icon");
+
+var _listIcon2 = _interopRequireDefault(_listIcon);
+
+var _listAvatar = require("./components/list/list-avatar");
+
+var _listAvatar2 = _interopRequireDefault(_listAvatar);
+
+var _listThumbnail = require("./components/list/list-thumbnail");
+
+var _listThumbnail2 = _interopRequireDefault(_listThumbnail);
+
+var _regularPicker = require("./components/picker/regularPicker");
+
+var _regularPicker2 = _interopRequireDefault(_regularPicker);
+
+var _placeholderPicker = require("./components/picker/placeholderPicker");
+
+var _placeholderPicker2 = _interopRequireDefault(_placeholderPicker);
+
+var _placeholderPickernote = require("./components/picker/placeholderPickernote");
+
+var _placeholderPickernote2 = _interopRequireDefault(_placeholderPickernote);
+
+var _backButtonPicker = require("./components/picker/backButtonPicker");
+
+var _backButtonPicker2 = _interopRequireDefault(_backButtonPicker);
+
+var _headerPicker = require("./components/picker/headerPicker");
+
+var _headerPicker2 = _interopRequireDefault(_headerPicker);
+
+var _headerStylePicker = require("./components/picker/headerStylePicker");
+
+var _headerStylePicker2 = _interopRequireDefault(_headerStylePicker);
+
+var _customHeaderPicker = require("./components/picker/customHeaderPicker");
+
+var _customHeaderPicker2 = _interopRequireDefault(_customHeaderPicker);
+
+var _basicTab = require("./components/tab/basicTab");
+
+var _basicTab2 = _interopRequireDefault(_basicTab);
+
+var _configTab = require("./components/tab/configTab");
+
+var _configTab2 = _interopRequireDefault(_configTab);
+
+var _scrollableTab = require("./components/tab/scrollableTab");
+
+var _scrollableTab2 = _interopRequireDefault(_scrollableTab);
+
+var _SegmentHeader = require("./components/segment/SegmentHeader");
+
+var _SegmentHeader2 = _interopRequireDefault(_SegmentHeader);
+
+var _regular3 = require("./components/actionsheet/regular");
+
+var _regular4 = _interopRequireDefault(_regular3);
+
+var _icon = require("./components/actionsheet/icon");
+
+var _icon2 = _interopRequireDefault(_icon);
+
+var _segmentTab = require("./components/segment/segmentTab");
+
+var _segmentTab2 = _interopRequireDefault(_segmentTab);
+
+var _simple = require("./components/deckswiper/simple");
+
+var _simple2 = _interopRequireDefault(_simple);
+
+var _advanced = require("./components/deckswiper/advanced");
+
+var _advanced2 = _interopRequireDefault(_advanced);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var AppNavigator = (0, _reactNavigation.StackNavigator)({
+    Drawer: { screen: _Drawer2.default },
+
+    Header1: { screen: _2.default },
+    Header2: { screen: _4.default },
+    Header3: { screen: _6.default },
+    Header4: { screen: _8.default },
+    Header5: { screen: _10.default },
+    Header6: { screen: _12.default },
+    Header7: { screen: _14.default },
+    Header8: { screen: _16.default },
+
+    BasicFooter: { screen: _basicFooter2.default },
+    IconFooter: { screen: _iconFooter2.default },
+    IconText: { screen: _iconText2.default },
+    BadgeFooter: { screen: _badgeFooter2.default },
+
+    Default: { screen: _default2.default },
+    Outline: { screen: _outline2.default },
+    Rounded: { screen: _rounded2.default },
+    Block: { screen: _block2.default },
+    Full: { screen: _full2.default },
+    Custom: { screen: _custom2.default },
+    Transparent: { screen: _transparent2.default },
+    IconBtn: { screen: _iconBtn2.default },
+    Disabled: { screen: _disabled2.default },
+
+    BasicCard: { screen: _basic2.default },
+    NHCardImage: { screen: _cardImage2.default },
+    NHCardShowcase: { screen: _cardShowcase2.default },
+    NHCardList: { screen: _cardList2.default },
+    NHCardHeaderAndFooter: { screen: _cardHeaderAndFooter2.default },
+
+    SimpleDeck: { screen: _simple2.default },
+    AdvancedDeck: { screen: _advanced2.default },
+
+    BasicFab: { screen: _basic4.default },
+    MultipleFab: { screen: _multiple2.default },
+
+    FixedLabel: { screen: _fixedLabel2.default },
+    InlineLabel: { screen: _inlineLabel2.default },
+    FloatingLabel: { screen: _floatingLabel2.default },
+    PlaceholderLabel: { screen: _placeholder2.default },
+    StackedLabel: { screen: _stacked2.default },
+    RegularInput: { screen: _regular2.default },
+    UnderlineInput: { screen: _underline2.default },
+    RoundedInput: { screen: _rounded4.default },
+    IconInput: { screen: _iconInput2.default },
+    SuccessInput: { screen: _success2.default },
+    ErrorInput: { screen: _error2.default },
+    DisabledInput: { screen: _disabledInput2.default },
+
+    RowNB: { screen: _row2.default },
+    ColumnNB: { screen: _column2.default },
+    NestedGrid: { screen: _nested2.default },
+    CustomRow: { screen: _customRow2.default },
+    CustomCol: { screen: _customCol2.default },
+
+    NHBasicList: { screen: _basicList2.default },
+    NHListDivider: { screen: _listDivider2.default },
+    NHListSeparator: { screen: _listSeparator2.default },
+    NHListHeader: { screen: _listHeaders2.default },
+    NHListIcon: { screen: _listIcon2.default },
+    NHListAvatar: { screen: _listAvatar2.default },
+    NHListThumbnail: { screen: _listThumbnail2.default },
+
+    BasicListSwipe: { screen: _basicListSwipe2.default },
+    MultiListSwipe: { screen: _multiListSwipe2.default },
+
+    RegularPicker: { screen: _regularPicker2.default },
+    PlaceholderPicker: { screen: _placeholderPicker2.default },
+    PlaceholderPickerNote: { screen: _placeholderPickernote2.default },
+    BackButtonPicker: { screen: _backButtonPicker2.default },
+    HeaderPicker: { screen: _headerPicker2.default },
+    HeaderStylePicker: { screen: _headerStylePicker2.default },
+    CustomHeaderPicker: { screen: _customHeaderPicker2.default },
+
+    BasicTab: { screen: _basicTab2.default },
+    ConfigTab: { screen: _configTab2.default },
+    ScrollableTab: { screen: _scrollableTab2.default },
+
+    BasicSegment: { screen: _SegmentHeader2.default },
+    AdvSegment: { screen: _segmentTab2.default },
+
+    RegularActionSheet: { screen: _regular4.default },
+    IconActionSheet: { screen: _icon2.default }
+}, {
+    initialRouteName: "Drawer",
+    headerMode: "none"
+});
+
+exports.default = function () {
+    return _react2.default.createElement(
+        _nativeBase.Root,
+        {
+            __source: {
+                fileName: _jsxFileName,
+                lineNumber: 177
+            }
+        },
+        _react2.default.createElement(AppNavigator, {
+            __source: {
+                fileName: _jsxFileName,
+                lineNumber: 178
+            }
+        })
+    );
+};

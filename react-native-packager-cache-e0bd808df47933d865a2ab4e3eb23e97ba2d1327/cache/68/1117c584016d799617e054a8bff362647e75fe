@@ -1,0 +1,329 @@
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var _jsxFileName = "/home/muri/Documents/react-native/NativeBase-KitchenSink/js/components/radio/index.js";
+
+var _react = require("react");
+
+var _react2 = babelHelpers.interopRequireDefault(_react);
+
+var _nativeBase = require("native-base");
+
+var _styles = require("./styles");
+
+var _styles2 = babelHelpers.interopRequireDefault(_styles);
+
+var NHRadio = function (_Component) {
+  babelHelpers.inherits(NHRadio, _Component);
+
+  function NHRadio(props) {
+    babelHelpers.classCallCheck(this, NHRadio);
+
+    var _this = babelHelpers.possibleConstructorReturn(this, (NHRadio.__proto__ || Object.getPrototypeOf(NHRadio)).call(this, props));
+
+    _this.state = {
+      radio1: false,
+      radio2: false,
+      radio3: false,
+      radio4: true
+    };
+    return _this;
+  }
+
+  babelHelpers.createClass(NHRadio, [{
+    key: "toggleRadio1",
+    value: function toggleRadio1() {
+      this.setState({
+        radio1: true,
+        radio2: false,
+        radio3: false,
+        radio4: false
+      });
+    }
+  }, {
+    key: "toggleRadio2",
+    value: function toggleRadio2() {
+      this.setState({
+        radio1: false,
+        radio2: true,
+        radio3: false,
+        radio4: false
+      });
+    }
+  }, {
+    key: "toggleRadio3",
+    value: function toggleRadio3() {
+      this.setState({
+        radio1: false,
+        radio2: false,
+        radio3: true,
+        radio4: false
+      });
+    }
+  }, {
+    key: "toggleRadio4",
+    value: function toggleRadio4() {
+      this.setState({
+        radio1: false,
+        radio2: false,
+        radio3: false,
+        radio4: true
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      return _react2.default.createElement(
+        _nativeBase.Container,
+        { style: _styles2.default.container, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 70
+          }
+        },
+        _react2.default.createElement(
+          _nativeBase.Header,
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 71
+            }
+          },
+          _react2.default.createElement(
+            _nativeBase.Left,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 72
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Button,
+              {
+                transparent: true,
+                onPress: function onPress() {
+                  return _this2.props.navigation.navigate("DrawerOpen");
+                },
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 73
+                }
+              },
+              _react2.default.createElement(_nativeBase.Icon, { name: "menu", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 77
+                }
+              })
+            )
+          ),
+          _react2.default.createElement(
+            _nativeBase.Body,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 80
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Title,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 81
+                }
+              },
+              "Radio"
+            )
+          ),
+          _react2.default.createElement(_nativeBase.Right, {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 83
+            }
+          })
+        ),
+        _react2.default.createElement(
+          _nativeBase.Content,
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 86
+            }
+          },
+          _react2.default.createElement(
+            _nativeBase.ListItem,
+            {
+              selected: this.state.radio1,
+              onPress: function onPress() {
+                return _this2.toggleRadio1();
+              },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 87
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Text,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 91
+                }
+              },
+              "Lunch Break"
+            ),
+            _react2.default.createElement(
+              _nativeBase.Right,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 92
+                }
+              },
+              _react2.default.createElement(_nativeBase.Radio, {
+                selected: this.state.radio1,
+                onPress: function onPress() {
+                  return _this2.toggleRadio1();
+                },
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 93
+                }
+              })
+            )
+          ),
+          _react2.default.createElement(
+            _nativeBase.ListItem,
+            {
+              selected: this.state.radio2,
+              onPress: function onPress() {
+                return _this2.toggleRadio2();
+              },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 99
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Text,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 103
+                }
+              },
+              "Daily Stand Up"
+            ),
+            _react2.default.createElement(
+              _nativeBase.Right,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 104
+                }
+              },
+              _react2.default.createElement(_nativeBase.Radio, {
+                selected: this.state.radio2,
+                onPress: function onPress() {
+                  return _this2.toggleRadio2();
+                },
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 105
+                }
+              })
+            )
+          ),
+          _react2.default.createElement(
+            _nativeBase.ListItem,
+            {
+              selected: this.state.radio3,
+              onPress: function onPress() {
+                return _this2.toggleRadio3();
+              },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 111
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Text,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 115
+                }
+              },
+              "Finish List Screen"
+            ),
+            _react2.default.createElement(
+              _nativeBase.Right,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 116
+                }
+              },
+              _react2.default.createElement(_nativeBase.Radio, {
+                selected: this.state.radio3,
+                onPress: function onPress() {
+                  return _this2.toggleRadio3();
+                },
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 117
+                }
+              })
+            )
+          ),
+          _react2.default.createElement(
+            _nativeBase.ListItem,
+            {
+              selected: this.state.radio4,
+              onPress: function onPress() {
+                return _this2.toggleRadio4();
+              },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 123
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Text,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 127
+                }
+              },
+              "Discussion with Client"
+            ),
+            _react2.default.createElement(
+              _nativeBase.Right,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 128
+                }
+              },
+              _react2.default.createElement(_nativeBase.Radio, {
+                selected: this.state.radio4,
+                onPress: function onPress() {
+                  return _this2.toggleRadio4();
+                },
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 129
+                }
+              })
+            )
+          )
+        )
+      );
+    }
+  }]);
+  return NHRadio;
+}(_react.Component);
+
+exports.default = NHRadio;

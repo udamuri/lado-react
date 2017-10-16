@@ -1,0 +1,363 @@
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var _jsxFileName = "/home/muri/Documents/react-native/NativeBase-KitchenSink/js/components/fab/multiple.js";
+
+var _react = require("react");
+
+var _react2 = babelHelpers.interopRequireDefault(_react);
+
+var _reactNative = require("react-native");
+
+var _nativeBase = require("native-base");
+
+var _styles = require("./styles");
+
+var _styles2 = babelHelpers.interopRequireDefault(_styles);
+
+var MultipleFab = function (_Component) {
+  babelHelpers.inherits(MultipleFab, _Component);
+
+  function MultipleFab(props) {
+    babelHelpers.classCallCheck(this, MultipleFab);
+
+    var _this = babelHelpers.possibleConstructorReturn(this, (MultipleFab.__proto__ || Object.getPrototypeOf(MultipleFab)).call(this, props));
+
+    _this.state = {
+      active: false,
+      active1: false,
+      active2: false,
+      active3: false
+    };
+    return _this;
+  }
+
+  babelHelpers.createClass(MultipleFab, [{
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      return _react2.default.createElement(
+        _nativeBase.Container,
+        { style: _styles2.default.container, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 32
+          }
+        },
+        _react2.default.createElement(
+          _nativeBase.Header,
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 34
+            }
+          },
+          _react2.default.createElement(
+            _nativeBase.Left,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 35
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Button,
+              { transparent: true, onPress: function onPress() {
+                  return _this2.props.navigation.goBack();
+                }, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 36
+                }
+              },
+              _react2.default.createElement(_nativeBase.Icon, { name: "arrow-back", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 37
+                }
+              })
+            )
+          ),
+          _react2.default.createElement(
+            _nativeBase.Body,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 40
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Title,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 41
+                }
+              },
+              "Multiple FABs"
+            )
+          ),
+          _react2.default.createElement(_nativeBase.Right, {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 43
+            }
+          })
+        ),
+        _react2.default.createElement(
+          _reactNative.View,
+          { style: { flex: 1 }, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 46
+            }
+          },
+          _react2.default.createElement(
+            _nativeBase.Fab,
+            {
+              active: this.state.active,
+              direction: "up",
+              containerStyle: {},
+              style: { backgroundColor: "#5067FF" },
+              position: "bottomRight",
+              onPress: function onPress() {
+                return _this2.setState({ active: !_this2.state.active });
+              },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 48
+              }
+            },
+            _react2.default.createElement(_nativeBase.IconNB, { name: "md-share", __source: {
+                fileName: _jsxFileName,
+                lineNumber: 56
+              }
+            }),
+            _react2.default.createElement(
+              _nativeBase.Button,
+              { style: { backgroundColor: "#34A34F" }, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 57
+                }
+              },
+              _react2.default.createElement(_nativeBase.IconNB, { name: "logo-whatsapp", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 58
+                }
+              })
+            ),
+            _react2.default.createElement(
+              _nativeBase.Button,
+              { style: { backgroundColor: "#3B5998" }, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 60
+                }
+              },
+              _react2.default.createElement(_nativeBase.IconNB, { name: "logo-facebook", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 61
+                }
+              })
+            ),
+            _react2.default.createElement(
+              _nativeBase.Button,
+              { disabled: true, style: { backgroundColor: "#DD5144" }, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 63
+                }
+              },
+              _react2.default.createElement(_nativeBase.IconNB, { name: "ios-mail", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 64
+                }
+              })
+            )
+          ),
+          _react2.default.createElement(
+            _nativeBase.Fab,
+            {
+              active: this.state.active1,
+              direction: "left",
+              containerStyle: {},
+              style: { backgroundColor: "#5067FF" },
+              position: "topRight",
+              onPress: function onPress() {
+                return _this2.setState({ active1: !_this2.state.active1 });
+              },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 67
+              }
+            },
+            _react2.default.createElement(_nativeBase.IconNB, { name: "md-share", __source: {
+                fileName: _jsxFileName,
+                lineNumber: 75
+              }
+            }),
+            _react2.default.createElement(
+              _nativeBase.Button,
+              { style: { backgroundColor: "#34A34F" }, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 76
+                }
+              },
+              _react2.default.createElement(_nativeBase.IconNB, { name: "logo-whatsapp", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 77
+                }
+              })
+            ),
+            _react2.default.createElement(
+              _nativeBase.Button,
+              { style: { backgroundColor: "#3B5998" }, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 79
+                }
+              },
+              _react2.default.createElement(_nativeBase.IconNB, { name: "logo-facebook", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 80
+                }
+              })
+            ),
+            _react2.default.createElement(
+              _nativeBase.Button,
+              { disabled: true, style: { backgroundColor: "#DD5144" }, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 82
+                }
+              },
+              _react2.default.createElement(_nativeBase.IconNB, { name: "ios-mail", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 83
+                }
+              })
+            )
+          ),
+          _react2.default.createElement(
+            _nativeBase.Fab,
+            {
+              active: this.state.active2,
+              direction: "down",
+              containerStyle: {},
+              style: { backgroundColor: "#5067FF" },
+              position: "topLeft",
+              onPress: function onPress() {
+                return _this2.setState({ active2: !_this2.state.active2 });
+              },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 86
+              }
+            },
+            _react2.default.createElement(_nativeBase.IconNB, { name: "md-share", __source: {
+                fileName: _jsxFileName,
+                lineNumber: 94
+              }
+            }),
+            _react2.default.createElement(
+              _nativeBase.Button,
+              { style: { backgroundColor: "#34A34F" }, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 95
+                }
+              },
+              _react2.default.createElement(_nativeBase.IconNB, { name: "logo-whatsapp", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 96
+                }
+              })
+            ),
+            _react2.default.createElement(
+              _nativeBase.Button,
+              { style: { backgroundColor: "#3B5998" }, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 98
+                }
+              },
+              _react2.default.createElement(_nativeBase.IconNB, { name: "logo-facebook", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 99
+                }
+              })
+            ),
+            _react2.default.createElement(
+              _nativeBase.Button,
+              { disabled: true, style: { backgroundColor: "#DD5144" }, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 101
+                }
+              },
+              _react2.default.createElement(_nativeBase.IconNB, { name: "ios-mail", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 102
+                }
+              })
+            )
+          ),
+          _react2.default.createElement(
+            _nativeBase.Fab,
+            {
+              active: this.state.active3,
+              direction: "right",
+              containerStyle: {},
+              style: { backgroundColor: "#5067FF" },
+              position: "bottomLeft",
+              onPress: function onPress() {
+                return _this2.setState({ active3: !_this2.state.active3 });
+              },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 105
+              }
+            },
+            _react2.default.createElement(_nativeBase.IconNB, { name: "md-share", __source: {
+                fileName: _jsxFileName,
+                lineNumber: 113
+              }
+            }),
+            _react2.default.createElement(
+              _nativeBase.Button,
+              { style: { backgroundColor: "#34A34F" }, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 114
+                }
+              },
+              _react2.default.createElement(_nativeBase.IconNB, { name: "logo-whatsapp", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 115
+                }
+              })
+            ),
+            _react2.default.createElement(
+              _nativeBase.Button,
+              { style: { backgroundColor: "#3B5998" }, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 117
+                }
+              },
+              _react2.default.createElement(_nativeBase.IconNB, { name: "logo-facebook", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 118
+                }
+              })
+            ),
+            _react2.default.createElement(
+              _nativeBase.Button,
+              { disabled: true, style: { backgroundColor: "#DD5144" }, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 120
+                }
+              },
+              _react2.default.createElement(_nativeBase.IconNB, { name: "ios-mail", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 121
+                }
+              })
+            )
+          )
+        )
+      );
+    }
+  }]);
+  return MultipleFab;
+}(_react.Component);
+
+exports.default = MultipleFab;

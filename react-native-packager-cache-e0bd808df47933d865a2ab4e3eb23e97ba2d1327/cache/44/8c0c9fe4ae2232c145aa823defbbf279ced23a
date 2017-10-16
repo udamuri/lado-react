@@ -1,0 +1,112 @@
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var _jsxFileName = "/home/muri/Documents/react-native/NativeBase-KitchenSink/js/components/tab/tabThree.js";
+
+var _react = require("react");
+
+var _react2 = babelHelpers.interopRequireDefault(_react);
+
+var _nativeBase = require("native-base");
+
+var _styles = require("./styles");
+
+var _styles2 = babelHelpers.interopRequireDefault(_styles);
+
+var TabThree = function (_Component) {
+  babelHelpers.inherits(TabThree, _Component);
+
+  function TabThree() {
+    babelHelpers.classCallCheck(this, TabThree);
+    return babelHelpers.possibleConstructorReturn(this, (TabThree.__proto__ || Object.getPrototypeOf(TabThree)).apply(this, arguments));
+  }
+
+  babelHelpers.createClass(TabThree, [{
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement(
+        _nativeBase.Content,
+        { padder: true, style: { marginTop: 0 }, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 13
+          }
+        },
+        _react2.default.createElement(
+          _nativeBase.Card,
+          { style: { flex: 0 }, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 14
+            }
+          },
+          _react2.default.createElement(
+            _nativeBase.CardItem,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 15
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Body,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 16
+                }
+              },
+              _react2.default.createElement(
+                _nativeBase.Text,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 17
+                  }
+                },
+                "NativeBase is a free and open source framework that enables developers to build high-quality mobile apps using React Native apps with a fusion of ES6."
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          _nativeBase.Card,
+          { style: { flex: 0 }, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 25
+            }
+          },
+          _react2.default.createElement(
+            _nativeBase.CardItem,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 26
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Body,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 27
+                }
+              },
+              _react2.default.createElement(
+                _nativeBase.Text,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 28
+                  }
+                },
+                "NativeBase gives you the potential of building applications that run on both platforms using a single codebase."
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
+  return TabThree;
+}(_react.Component);
+
+exports.default = TabThree;

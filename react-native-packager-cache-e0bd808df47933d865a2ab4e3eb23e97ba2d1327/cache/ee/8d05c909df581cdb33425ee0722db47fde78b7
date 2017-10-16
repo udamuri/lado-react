@@ -1,0 +1,196 @@
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var _jsxFileName = "/home/muri/Documents/react-native/NativeBase-KitchenSink/js/components/form/index.js";
+
+var _react = require("react");
+
+var _react2 = babelHelpers.interopRequireDefault(_react);
+
+var _nativeBase = require("native-base");
+
+var _styles = require("./styles");
+
+var _styles2 = babelHelpers.interopRequireDefault(_styles);
+
+var datas = [{
+  route: "FixedLabel",
+  text: "Fixed Label"
+}, {
+  route: "InlineLabel",
+  text: "Inline Label"
+}, {
+  route: "FloatingLabel",
+  text: "Floating Label"
+}, {
+  route: "PlaceholderLabel",
+  text: "Placeholder Label"
+}, {
+  route: "StackedLabel",
+  text: "Stacked Label"
+}, {
+  route: "RegularInput",
+  text: "Regular Textbox"
+}, {
+  route: "UnderlineInput",
+  text: "Underlined Textbox"
+}, {
+  route: "RoundedInput",
+  text: "Rounded Textbox"
+}, {
+  route: "IconInput",
+  text: "Icon Textbox"
+}, {
+  route: "SuccessInput",
+  text: "Success Input Textbox"
+}, {
+  route: "ErrorInput",
+  text: "Error Input Textbox"
+}, {
+  route: "DisabledInput",
+  text: "Disabled Textbox"
+}];
+
+var NHForm = function (_Component) {
+  babelHelpers.inherits(NHForm, _Component);
+
+  function NHForm() {
+    babelHelpers.classCallCheck(this, NHForm);
+    return babelHelpers.possibleConstructorReturn(this, (NHForm.__proto__ || Object.getPrototypeOf(NHForm)).apply(this, arguments));
+  }
+
+  babelHelpers.createClass(NHForm, [{
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      return _react2.default.createElement(
+        _nativeBase.Container,
+        { style: _styles2.default.container, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 74
+          }
+        },
+        _react2.default.createElement(
+          _nativeBase.Header,
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 75
+            }
+          },
+          _react2.default.createElement(
+            _nativeBase.Left,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 76
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Button,
+              {
+                transparent: true,
+                onPress: function onPress() {
+                  return _this2.props.navigation.navigate("DrawerOpen");
+                },
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 77
+                }
+              },
+              _react2.default.createElement(_nativeBase.Icon, { name: "menu", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 81
+                }
+              })
+            )
+          ),
+          _react2.default.createElement(
+            _nativeBase.Body,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 84
+              }
+            },
+            _react2.default.createElement(
+              _nativeBase.Title,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 85
+                }
+              },
+              "Form & Inputs"
+            )
+          ),
+          _react2.default.createElement(_nativeBase.Right, {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 87
+            }
+          })
+        ),
+        _react2.default.createElement(
+          _nativeBase.Content,
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 91
+            }
+          },
+          _react2.default.createElement(_nativeBase.List, {
+            dataArray: datas,
+            renderRow: function renderRow(data) {
+              return _react2.default.createElement(
+                _nativeBase.ListItem,
+                {
+                  button: true,
+                  onPress: function onPress() {
+                    return _this2.props.navigation.navigate(data.route);
+                  },
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 95
+                  }
+                },
+                _react2.default.createElement(
+                  _nativeBase.Text,
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 99
+                    }
+                  },
+                  data.text
+                ),
+                _react2.default.createElement(
+                  _nativeBase.Right,
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 100
+                    }
+                  },
+                  _react2.default.createElement(_nativeBase.Icon, { name: "arrow-forward", style: { color: "#999" }, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 101
+                    }
+                  })
+                )
+              );
+            },
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 92
+            }
+          })
+        )
+      );
+    }
+  }]);
+  return NHForm;
+}(_react.Component);
+
+exports.default = NHForm;
