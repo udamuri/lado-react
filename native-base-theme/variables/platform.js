@@ -6,8 +6,10 @@ const deviceHeight = Dimensions.get('window').height;
 const deviceWidth = Dimensions.get('window').width;
 const platform = Platform.OS;
 const platformStyle = undefined;
+const ApiUrl = '';
 
 export default {
+	ApiUrl,
 	platformStyle,
 	platform,
 	// AndroidRipple
