@@ -4,6 +4,6 @@ var _App = require('./App');
 
 var _App2 = babelHelpers.interopRequireDefault(_App);
 
-_reactNative.AppRegistry.registerComponent('NativebaseKitchenSink', function () {
+_reactNative.AppRegistry.registerComponent('lado', function () {
   return _App2.default;
 });
