@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Image, View, StatusBar } from "react-native";
+import { ActivityIndicator, ListView, Image, View, StatusBar } from "react-native";
 
 import { Container, Button, H3, Text, Header, Title, Body, Left, Right } from "native-base";
 
@@ -9,8 +9,7 @@ const launchscreenBg = require("../../../img/launchscreen-bg.png");
 const launchscreenLogo = require("../../../img/lado.png");
 
 class Home extends Component {
-	// eslint-disable-line
-
+	
 	render() {
 		return (
 			<Container>
@@ -29,7 +28,7 @@ class Home extends Component {
 						<H3 style={styles.text}>Muri Budiman</H3>
 						<View style={{ marginTop: 8 }} />
 						<H3 style={styles.text}>Perfectplaces</H3>
-						<View style={{ marginTop: 8 }} />
+						<View style={{ marginTop: 8 }} />			
 					</View>
 					<View style={{ marginBottom: 80 }}>
 						<Button

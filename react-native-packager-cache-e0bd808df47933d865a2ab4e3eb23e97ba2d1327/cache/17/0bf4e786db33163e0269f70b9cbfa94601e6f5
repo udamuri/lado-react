@@ -55,47 +55,88 @@ var launchscreenLogo = require("../../../img/lado.png");
 var Home = _wrapComponent("Home")(function (_Component) {
 	_inherits(Home, _Component);
 
-	function Home() {
+	function Home(props) {
 		_classCallCheck(this, Home);
 
-		return _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).apply(this, arguments));
+		var _this = _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).call(this, props));
+
+		_this.state = {
+			isLoading: true
+		};
+		return _this;
 	}
 
 	_createClass(Home, [{
+		key: "componentDidMount",
+		value: function componentDidMount() {
+			var _this2 = this;
+
+			return fetch('https://facebook.github.io/react-native/movies.json').then(function (response) {
+				return response.json();
+			}).then(function (responseJson) {
+				var ds = new _reactNative.ListView.DataSource({ rowHasChanged: function rowHasChanged(r1, r2) {
+						return r1 !== r2;
+					} });
+				_this2.setState({
+					isLoading: false,
+					dataSource: ds.cloneWithRows(responseJson.movies)
+				}, function () {});
+			}).catch(function (error) {
+				console.error(error);
+			});
+		}
+	}, {
 		key: "render",
 		value: function render() {
-			var _this2 = this;
+			var _this3 = this;
+
+			if (this.state.isLoading) {
+				return _react3.default.createElement(
+					_reactNative.View,
+					{ style: { flex: 1, paddingTop: 20 }, __source: {
+							fileName: _jsxFileName,
+							lineNumber: 41
+						}
+					},
+					_react3.default.createElement(_reactNative.ActivityIndicator, {
+						__source: {
+							fileName: _jsxFileName,
+							lineNumber: 42
+						}
+					})
+				);
+			}
 
 			return _react3.default.createElement(
 				_nativeBase.Container,
 				{
 					__source: {
 						fileName: _jsxFileName,
-						lineNumber: 16
+						lineNumber: 49
 					}
 				},
 				_react3.default.createElement(_reactNative.StatusBar, { barStyle: "light-content", __source: {
 						fileName: _jsxFileName,
-						lineNumber: 17
+						lineNumber: 50
 					}
 				}),
 				_react3.default.createElement(
 					_reactNative.Image,
 					{ source: launchscreenBg, style: _styles2.default.imageContainer, __source: {
 							fileName: _jsxFileName,
-							lineNumber: 18
+							lineNumber: 51
 						}
 					},
 					_react3.default.createElement(
 						_reactNative.View,
 						{ style: _styles2.default.logoContainer, __source: {
 								fileName: _jsxFileName,
-								lineNumber: 19
+								lineNumber: 52
 							}
 						},
 						_react3.default.createElement(_reactNative.Image, { source: launchscreenLogo, style: _styles2.default.logo, __source: {
 								fileName: _jsxFileName,
-								lineNumber: 20
+								lineNumber: 53
 							}
 						})
 					),
@@ -109,35 +150,56 @@ var Home = _wrapComponent("Home")(function (_Component) {
 							},
 							__source: {
 								fileName: _jsxFileName,
-								lineNumber: 22
+								lineNumber: 55
 							}
 						},
 						_react3.default.createElement(
 							_nativeBase.H3,
 							{ style: _styles2.default.text, __source: {
 									fileName: _jsxFileName,
-									lineNumber: 29
+									lineNumber: 62
 								}
 							},
 							"Muri Budiman"
 						),
 						_react3.default.createElement(_reactNative.View, { style: { marginTop: 8 }, __source: {
 								fileName: _jsxFileName,
-								lineNumber: 30
+								lineNumber: 63
 							}
 						}),
 						_react3.default.createElement(
 							_nativeBase.H3,
 							{ style: _styles2.default.text, __source: {
 									fileName: _jsxFileName,
-									lineNumber: 31
+									lineNumber: 64
 								}
 							},
 							"Perfectplaces"
 						),
 						_react3.default.createElement(_reactNative.View, { style: { marginTop: 8 }, __source: {
 								fileName: _jsxFileName,
-								lineNumber: 32
+								lineNumber: 65
+							}
+						}),
+						_react3.default.createElement(_reactNative.ListView, {
+							dataSource: this.state.dataSource,
+							renderRow: function renderRow(rowData) {
+								return _react3.default.createElement(
+									_nativeBase.Text,
+									{
+										__source: {
+											fileName: _jsxFileName,
+											lineNumber: 68
+										}
+									},
+									rowData.title,
+									", ",
+									rowData.releaseYear
+								);
+							},
+							__source: {
+								fileName: _jsxFileName,
+								lineNumber: 66
 							}
 						})
 					),
@@ -145,7 +207,7 @@ var Home = _wrapComponent("Home")(function (_Component) {
 						_reactNative.View,
 						{ style: { marginBottom: 80 }, __source: {
 								fileName: _jsxFileName,
-								lineNumber: 34
+								lineNumber: 71
 							}
 						},
 						_react3.default.createElement(
@@ -153,11 +215,11 @@ var Home = _wrapComponent("Home")(function (_Component) {
 							{
 								style: { backgroundColor: "#6FAF98", alignSelf: "center" },
 								onPress: function onPress() {
-									return _this2.props.navigation.navigate("DrawerOpen");
+									return _this3.props.navigation.navigate("DrawerOpen");
 								},
 								__source: {
 									fileName: _jsxFileName,
-									lineNumber: 35
+									lineNumber: 72
 								}
 							},
 							_react3.default.createElement(
@@ -165,7 +227,7 @@ var Home = _wrapComponent("Home")(function (_Component) {
 								{
 									__source: {
 										fileName: _jsxFileName,
-										lineNumber: 39
+										lineNumber: 76
 									}
 								},
 								"Lets Go!"

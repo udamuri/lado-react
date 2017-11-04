@@ -4,6 +4,7 @@ import {
   Header,
   Title,
   Content,
+  ListItem,
   Text,
   H3,
   Button,
@@ -36,10 +37,19 @@ class Anatomy extends Component {
         </Header>
 
         <Content padder>
-          <Text>
-            Content goes here
-          </Text>
-
+          <List
+            dataArray={datas}
+            renderRow={data =>
+              <ListItem
+                button
+                onPress={() => this.props.navigation.navigate(data.route)}
+              >
+                <Text>{data.text}</Text>
+                <Right>
+                  <Icon name="arrow-forward" style={{ color: "#999" }} />
+                </Right>
+              </ListItem>}
+          />
         </Content>
       </Container>
     );

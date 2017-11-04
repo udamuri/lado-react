@@ -18,13 +18,14 @@ import styles from "./styles";
 class Header1 extends Component {
   // eslint-disable-line
 
+  
   render() {
     return (
       <Container style={styles.container}>
         <Header>
           <Left />
           <Body>
-            <Title>Header</Title>
+            <Title>Lado</Title>
           </Body>
           <Right />
 

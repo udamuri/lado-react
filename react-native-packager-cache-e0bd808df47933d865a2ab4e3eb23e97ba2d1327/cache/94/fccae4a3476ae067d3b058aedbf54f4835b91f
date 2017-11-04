@@ -36,31 +36,31 @@ var Home = function (_Component) {
 				{
 					__source: {
 						fileName: _jsxFileName,
-						lineNumber: 16
+						lineNumber: 15
 					}
 				},
 				_react2.default.createElement(_reactNative.StatusBar, { barStyle: "light-content", __source: {
 						fileName: _jsxFileName,
-						lineNumber: 17
+						lineNumber: 16
 					}
 				}),
 				_react2.default.createElement(
 					_reactNative.Image,
 					{ source: launchscreenBg, style: _styles2.default.imageContainer, __source: {
 							fileName: _jsxFileName,
-							lineNumber: 18
+							lineNumber: 17
 						}
 					},
 					_react2.default.createElement(
 						_reactNative.View,
 						{ style: _styles2.default.logoContainer, __source: {
 								fileName: _jsxFileName,
-								lineNumber: 19
+								lineNumber: 18
 							}
 						},
 						_react2.default.createElement(_reactNative.Image, { source: launchscreenLogo, style: _styles2.default.logo, __source: {
 								fileName: _jsxFileName,
-								lineNumber: 20
+								lineNumber: 19
 							}
 						})
 					),
@@ -74,35 +74,35 @@ var Home = function (_Component) {
 							},
 							__source: {
 								fileName: _jsxFileName,
-								lineNumber: 22
+								lineNumber: 21
 							}
 						},
 						_react2.default.createElement(
 							_nativeBase.H3,
 							{ style: _styles2.default.text, __source: {
 									fileName: _jsxFileName,
-									lineNumber: 29
+									lineNumber: 28
 								}
 							},
 							"Muri Budiman"
 						),
 						_react2.default.createElement(_reactNative.View, { style: { marginTop: 8 }, __source: {
 								fileName: _jsxFileName,
-								lineNumber: 30
+								lineNumber: 29
 							}
 						}),
 						_react2.default.createElement(
 							_nativeBase.H3,
 							{ style: _styles2.default.text, __source: {
 									fileName: _jsxFileName,
-									lineNumber: 31
+									lineNumber: 30
 								}
 							},
 							"Perfectplaces"
 						),
 						_react2.default.createElement(_reactNative.View, { style: { marginTop: 8 }, __source: {
 								fileName: _jsxFileName,
-								lineNumber: 32
+								lineNumber: 31
 							}
 						})
 					),
@@ -110,7 +110,7 @@ var Home = function (_Component) {
 						_reactNative.View,
 						{ style: { marginBottom: 80 }, __source: {
 								fileName: _jsxFileName,
-								lineNumber: 34
+								lineNumber: 33
 							}
 						},
 						_react2.default.createElement(
@@ -122,7 +122,7 @@ var Home = function (_Component) {
 								},
 								__source: {
 									fileName: _jsxFileName,
-									lineNumber: 35
+									lineNumber: 34
 								}
 							},
 							_react2.default.createElement(
@@ -130,7 +130,7 @@ var Home = function (_Component) {
 								{
 									__source: {
 										fileName: _jsxFileName,
-										lineNumber: 39
+										lineNumber: 38
 									}
 								},
 								"Lets Go!"

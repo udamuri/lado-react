@@ -30,7 +30,7 @@ var Anatomy = function (_Component) {
         _nativeBase.Container,
         { style: _styles2.default.container, __source: {
             fileName: _jsxFileName,
-            lineNumber: 21
+            lineNumber: 22
           }
         },
         _react2.default.createElement(
@@ -38,7 +38,7 @@ var Anatomy = function (_Component) {
           {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 22
+              lineNumber: 23
             }
           },
           _react2.default.createElement(
@@ -46,7 +46,7 @@ var Anatomy = function (_Component) {
             {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 23
+                lineNumber: 24
               }
             },
             _react2.default.createElement(
@@ -58,12 +58,12 @@ var Anatomy = function (_Component) {
                 },
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 24
+                  lineNumber: 25
                 }
               },
               _react2.default.createElement(_nativeBase.Icon, { name: "ios-menu", __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 28
+                  lineNumber: 29
                 }
               })
             )
@@ -73,7 +73,7 @@ var Anatomy = function (_Component) {
             {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 31
+                lineNumber: 32
               }
             },
             _react2.default.createElement(
@@ -81,7 +81,7 @@ var Anatomy = function (_Component) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 32
+                  lineNumber: 33
                 }
               },
               "Header"
@@ -90,7 +90,7 @@ var Anatomy = function (_Component) {
           _react2.default.createElement(_nativeBase.Right, {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 34
+              lineNumber: 35
             }
           })
         ),
@@ -98,19 +98,55 @@ var Anatomy = function (_Component) {
           _nativeBase.Content,
           { padder: true, __source: {
               fileName: _jsxFileName,
-              lineNumber: 38
+              lineNumber: 39
             }
           },
-          _react2.default.createElement(
-            _nativeBase.Text,
-            {
-              __source: {
-                fileName: _jsxFileName,
-                lineNumber: 39
-              }
+          _react2.default.createElement(List, {
+            dataArray: datas,
+            renderRow: function renderRow(data) {
+              return _react2.default.createElement(
+                _nativeBase.ListItem,
+                {
+                  button: true,
+                  onPress: function onPress() {
+                    return _this2.props.navigation.navigate(data.route);
+                  },
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 43
+                  }
+                },
+                _react2.default.createElement(
+                  _nativeBase.Text,
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 47
+                    }
+                  },
+                  data.text
+                ),
+                _react2.default.createElement(
+                  _nativeBase.Right,
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 48
+                    }
+                  },
+                  _react2.default.createElement(_nativeBase.Icon, { name: "arrow-forward", style: { color: "#999" }, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 49
+                    }
+                  })
+                )
+              );
             },
-            "Content goes here"
-          )
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 40
+            }
+          })
         )
       );
     }
